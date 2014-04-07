@@ -1,0 +1,44 @@
+
+*****
+Ch1
+*****
+i:18 ni:1 si:2
+set:v1,3
+set:bFirstTime,true
+l:l1
+c c:3 a d c c#:4 c
+m:v1,--
+if:v1,=,0,l2
+j:l1
+l:l2
+play:Ch2
+j:l1
+*****
+Ch2
+*****
+i:27 ni:1 si:4 o:4
+g:15,5 g#:10,5 a g:5,5
+set:c2v1,3
+l:l1
+c c:3 a d c c#:4 c
+m:c2v1,--
+if:c2v1,=,0,l2
+j:l1
+l:l2
+i:36
+play:Ch3
+j:l1
+*****
+Ch3
+*****
+i:46 ni:3 si:2
+l:l1
+d d# a a d d# e a a 
+j:l1
+*****
+Ch4
+*****
+
+*****
+Ch5
+*****

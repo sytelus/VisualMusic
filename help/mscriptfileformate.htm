@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+<title>MScript File Format - Visual Music</title>
+<style>@import url(vmusic.css);</style>
+</HEAD>
+<BODY>
+
+<H1>MScript File Format</H1>
+<p>
+
+The scripts written for all tunes are stored in single 
+.MSC file (MSC for MScript). It's text file and you can edit it with any text 
+editor.&nbsp; Following is the sample .MSC file when opened in Notepad.
+<P><BR>Following is the general lay 
+out of file. The fields inside &lt;&gt; are compulsory.
+<br><br><CODE><table><tr><td>
+MScript:[Param1],[Param2] 
+VER:&lt;CompatibleVer1&gt;,[CompatibleVer2],...<BR>TIMER:&lt;Timer_Val&gt;
+<P><BR>START_TUNE:&lt;TuneName1&gt;,[Param1],[Param2]
+<P>--MScript commands
+<P>END_TUNE:&lt;TuneName1&gt;
+<P>
+<P>START_TUNE:&lt;TuneName2&gt;,[Param1],[Param2]
+<P>--MScript commands
+<P>END_TUNE:&lt;TuneName2&gt;
+<P>------------<BR>--More tunes<BR>------------
+</td></tr></table></CODE><br>
+The first filed, i.e. 
+MScript:[Param1],[Param2] is the signature. Currently no parameters are used so 
+it's just MScript. This signature helps to identify whether user is trying to 
+open valid MScript file or something else that might have been renamed to .MSC or whether file was 
+corrupted.
+<P>The 2nd field, i.e. VER:... indicates to which versions 
+the MScript in the file is compatible to. For example, if there is new version 
+of MScript in future (say 2.0) which is also partially backward compatible to 
+1.0 and that scripts in file .MSC does not uses any 2.0 only features then VER 
+field<BR>could be, VER:2.0,1.0
+<P>Now say their is entirely different flavour of MScript 
+with it's own version numbers, then it can mark MSC file with: VER:NewKind1.0 
+<P>When you open such MSC file in Visual Music it will show you message that 
+script in the MSC file is not compatible with what it understands. However now 
+say NewKind type of MScript is also compatible with MScript used by Visual Music, it can mark version as...<BR>VER:NewKind1.0,VMusic1.0 </P>
+<P>Or as.. </P> 
+<P>VER:NewKind1.0,1.0
+<P>In short, if Visual Music finds 1.0 or VMusic1.0 in the 
+compatible version list, it will open it happily or otherwise it will give out an error.
+<P><BR>Next, the 
+TIMER:&lt;Timer_Val&gt; is used to specify the interval used. For example when 
+you say a#:2 it means play the note a# for 2 intervals. Each interval is by 
+default 60ms. So the TIMER field looks like this, TIMER:60
+<P>If in future true multithreading is employed then it 
+would be possible to decrease this timer value and play a note for even more 
+short period.&nbsp;Next, script for each tune is enclosed between two markers 
+START_TUNE and END_TUNE. START_TUNE can also take parameters but none is used 
+currently.<BR></P>
+
+</BODY>
+</HTML>

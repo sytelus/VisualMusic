@@ -1,0 +1,25 @@
+MScript VER:1
+TIMER:60
+
+TuneStart:Main
+--Just an experiment done using NOTE_ON and NOTE_OFF commands. 
+--But it was indeed hard to do this!!
+
+INSTRUMENT:String_Ensemble_2 
+
+SET:VolumeNum,30
+
+LABEL:TOP
+
+VOLUME:VolumeNum
+NOTE_ON:a#
+MATH:VolumeNum,+=,5
+SILENCE:1
+if:VolumeNum,>=,100,BOTTOM,TOP
+
+LABEL:BOTTOM
+
+SILENCE:20
+NOTE_OFF:a#
+
+TuneEnd:Main

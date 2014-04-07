@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+<title>Note By Name - MScript Commands - Visual Music</title>
+<style>@import url(vmusic.css);</style>
+</HEAD>
+<BODY>
+
+<H1>  Note</H1>
+<br>
+<STRONG>Command Name:</STRONG> <EM>Note:&lt;Note Number&gt;,[Note 
+Interval],[Silence interval],[octave],[volume]</EM>           
+    
+<br><br>
+<STRONG>What it does:</STRONG> Plays the note specified by the given number. This basically 
+corresponds to the key number of the piano. A full piano could have 88 keys (0 
+at the left and 87 at right). You can specify which key you want to press.
+<br><br>
+<STRONG>Short Form:</STRONG>        &nbsp;N
+<br><br>
+<STRONG>Parameters:</STRONG>
+<BR><EM>Note 
+Number:</EM> Direct number of note you want to play. If note specified last note 
+will be played.<BR><EM>Note Interval: </EM>How long the note should be played. 
+If note specified standard note interval is used (default is 4).<BR><EM>Silence 
+Interval: </EM>How long to keep silence after playing the note. If note 
+specified standard silence interval is used (default is 4).<BR><EM>Octave: 
+</EM>In which octave to play the note. Also supports ++ etc operators. If note 
+specified currently set octave is used.<BR><EM>Volume: </EM> Volume with which the note should be played. Also supports ++ 
+etc operators. If note specified currently set volume is used.
+<BR><BR>
+<STRONG>Value constraints:</STRONG> 
+<br><EM>Note Number:</EM> 0-87, no error for the invalid value. 
+<BR><EM>Note Interval: </EM>If 0, Note is played for shortest interval limited 
+only by CPU speed<BR><EM>Silence Interval: </EM>If 0, no silence is inserted, 
+i.e., if second note is there it will be played immediately.<BR><EM>Octave: 
+</EM>0 - 7. <BR><EM>Volume: </EM>     0-100.&nbsp; 
+<br><br>
+<STRONG>Remarks: </STRONG>
+<br>This command is 
+equivalent to commands like a, a#, b. c# etc which plays the note specified by 
+its name instead of number. There is no performance issue between two versions. 
+In general playing a note by it's name is much more readable then it's number. 
+However this command is useful when you want to write the script to play the 
+note whose number is stored in a variable.<br><br>
+<STRONG>Examples: </STRONG>
+<br><br>
+1. Play notes<BR>
+<br><br><CODE><table><tr><td>
+NOTE:46 <BR>NOTE:48,2,3<BR>NOTE:50
+</td></tr></table></CODE><br>
+
+2. Play the note specified by variable<BR>
+<br><br><CODE><table><tr><td>
+SET:NoteNum,50<BR>NOTE:NoteNum
+</td></tr></table></CODE><br>
+
+3. Play notes in a loop<BR>
+<br><br><CODE><table><tr><td>
+SET:NoteNum,50<BR>LABEL:NextNote<BR>NOTE:NoteNum,7<BR>MATH:NoteNum,--<BR>IF:NoteNum,&gt;,88,ExitLoop,NextNote<BR>LABEL:ExitLoop<BR>EXIT
+</td></tr></table></CODE><br>
+
+<br>
+<STRONG>See Also:</STRONG> NON, NOFF, a, a#, b, c, 
+c#,...<BR>
+
+</BODY>
+</HTML>

@@ -1,0 +1,10 @@
+MScript VER:1
+TIMER:60
+
+TuneStart:Main
+--This is the recording done by pressing piano keys and setting intrument to Whistle!!
+
+INSTRUMENT:Whistle 
+
+n:23,3 s:11 n:29,2 s:24 n:19,3 s:8 n:16,2 s:5 n:14,3 s:25 n:36,3 s:10 n:31,3 s:19 n:19,2 s:6 n:24,2 s:5 n:33,3 s:27 n:26,2 s:9 n:21,3 s:20 n:28,2 s:6 n:38,2 s:7 n:31,2 s:22 n:16,2 s:11 n:31,3 s:18 n:26,3 s:5 n:31,2 s:8 n:33,3
+TuneEnd:Main

@@ -1,0 +1,282 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<OBJECT type="text/site properties">
+	<param name="Window Styles" value="0x800025">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Start Point">
+		<param name="Local" value="starthere.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="What Is Visual Music All About">
+			<param name="Local" value="whatsvisualmusicallabout.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="What Is Note, Octave And Bla Bla Bla">
+			<param name="Local" value="whatisnoteoctaveandblablabla.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Learn To Use Visual Music In 5 Mins!">
+			<param name="Local" value="learntousevisualmusicin5min.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="MScript Programming Super Quick Guide">
+			<param name="Local" value="mscriptprogrammingsuperquickguide.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="FAQ">
+			<param name="Local" value="visualmusicfaq.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Visual Music Refrence">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Visual Music Features">
+			<param name="Local" value="featuresandfunctionality.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Using Visual Music">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Using Keyboard">
+				<param name="Local" value="usingkeyboard.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Using Instrument Selector">
+				<param name="Local" value="usinginstrumentselector.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Using MScript Editor">
+				<param name="Local" value="usingmscripteditor.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Using Other Controls">
+				<param name="Local" value="usingothercontrols.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="File Operations">
+				<param name="Local" value="fileoperations.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Tips">
+				<param name="Local" value="tips.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Future Enhancements">
+			<param name="Local" value="futureenhancements.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Keyboard Shortcuts">
+			<param name="Local" value="keyboardshortcuts.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Required Files">
+			<param name="Local" value="requiredfiles.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="System Requirements">
+			<param name="Local" value="systemrequirements.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="MScript Refernce">
+		<param name="Local" value="mscriptreference.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="What Is MScript">
+			<param name="Local" value="whatismscript.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="MScript Features">
+			<param name="Local" value="mscriptfeatures.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="MScript Syntax Overview">
+			<param name="Local" value="mscriptsyntexoverview.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Simple MScript Commands">
+			<param name="Local" value="simplemscriptcommands.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="MScript Coding Standards">
+			<param name="Local" value="mscriptcodingstandard.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Complete MScript Command List">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Exit">
+				<param name="Local" value="mcmdexit.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="If">
+				<param name="Local" value="mcmdif.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Instrument">
+				<param name="Local" value="mcmdinstrument.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Jump">
+				<param name="Local" value="mcmdjump.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Label">
+				<param name="Local" value="mcmdlabel.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Math">
+				<param name="Local" value="mcmdmath.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Nop">
+				<param name="Local" value="mcmdnop.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Note">
+				<param name="Local" value="mcmdnote.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Note_Interval">
+				<param name="Local" value="mcmdnote_interval.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Note_On">
+				<param name="Local" value="mcmdnote_on.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Note By Name (a, a#, b, c, c#, ... etc)">
+				<param name="Local" value="mcmdnotebyname.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Octave">
+				<param name="Local" value="mcmdoctave.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Pan">
+				<param name="Local" value="mcmdpan.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Pause">
+				<param name="Local" value="mcmdpause.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Play">
+				<param name="Local" value="mcmdplay.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Print">
+				<param name="Local" value="mcmdprint.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Random">
+				<param name="Local" value="mcmdrandom.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Release">
+				<param name="Local" value="mcmdrelease.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Set">
+				<param name="Local" value="mcmdset.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Silence">
+				<param name="Local" value="mcmdsilence.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Silence_Interval">
+				<param name="Local" value="mcmdsilence_interval.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Stop">
+				<param name="Local" value="mcmdstop.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Temo">
+				<param name="Local" value="mcmdtempo.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Volume">
+				<param name="Local" value="mcmdvolume.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Wait_For">
+				<param name="Local" value="mcmdwait_for.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Timing In MScripts">
+			<param name="Local" value="timinginmscript.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="MScript Samples">
+			<param name="Local" value="mscriptsamples.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="MScript File Formate">
+			<param name="Local" value="mscriptfileformate.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Developers Reference">
+		<param name="Local" value="developerrefrence.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Extending Visual Music">
+			<param name="Local" value="extendingvisualmusic.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Visual Music Object Model">
+			<param name="Local" value="visualmusicobjectmodel.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Visual Music ActiveX Controls">
+			<param name="Local" value="visualmusicactivexcontrols.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Visual Music DDE Commands">
+			<param name="Local" value="visualmusicddecommands.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Visual Music Command Line Parameters">
+			<param name="Local" value="visualmusiccommandlineparameters.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="MIDI Programming Guide">
+			<param name="Local" value="midiprogramming.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Open Source Development">
+			<param name="Local" value="opensourcedevelopment.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="About">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="About Visual Music">
+			<param name="Local" value="about.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Open Source Development">
+			<param name="Local" value="opensourcedevelopement.html">
+			</OBJECT>
+	</UL>
+</UL>
+</BODY></HTML>

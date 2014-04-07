@@ -1,0 +1,22 @@
+MScript VER:1
+TIMER:60
+
+TuneStart:Main
+--Hurrey! I can play many instrument simultaneouly without creating second tune!
+--Power of NOTE_ON and NOTE_OFF commands!!
+
+INSTRUMENT:Overdriven_Guitar 
+
+non:a# 
+	INSTRUMENT:Orchestra_Hit
+	b a c 
+		INSTRUMENT:Flute 
+		non:d#
+			INSTRUMENT:Trombone
+			c c# b d d# 
+		noff:d#
+		INSTRUMENT:Violin 
+		d d# c 
+noff:a#
+
+TuneEnd:Main

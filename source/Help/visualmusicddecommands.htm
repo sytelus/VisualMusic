@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+<title>Visual Music DDE Commands - Visual Music</title>
+<style>@import url(vmusic.css);</style>
+</HEAD>
+<BODY>
+
+<H1>Visual Music DDE Commands</H1>
+<p>
+Visual Music 
+is also a DDE server allowing other programs to talk with it using DDE link. For example, 
+your application can detect the existing Visual Music instance by trying to set up a DDE link. Or even
+ask Visual Music to load a specific file and play it. The Visual Music itself uses it's own DDE capability to load the file
+in the existing instance when you click it in the Explorer. Below is the short description few DDE commands.
+<br><br>
+<h2>DDE Server Specifications:</h2><br>
+<b>LinkTopic:</b> Visual Music|Main<br>
+<b>LinkItem:</b> BaseCommands
+
+<br><br>
+<h2>DDE Server Command List:</h2><br>
+
+<UL>
+<li><b>ACTIVATE<EM> </EM></b>Brings 
+  the currently running Visual Music instance in front of all windows.
+<li><b>EXIT<EM> </EM></b>Ends the currently running Visual Music instance.
+<li><b>PLAY<EM>([TuneName]) 
+  </EM></b>Plays the specified tune. If tune is not specified the it plays currently selected tune.
+<li><b>PLAY_ALL</b>Plays all the tuns simultaneously.
+<li><b>STOP_PLAY</b>Stops any tunes that is currently being played.
+<li><b>LOAD<EM>(FileName) 
+  </EM></b>Loads the specified file.
+<li><b>SAVE</b>Saves the current tunes.
+<li><b>SAVE_AS<EM>(FileName) 
+  </EM></b>Saves the current tunes in to specified file.
+<li><b>NEW</b>Starts new composition.
+<li><b>SHOW_HELP<EM>(HelpTopic) 
+  </EM></b>Shows specified help topic.</li>   
+</UL>
+
+</BODY>
+</HTML>

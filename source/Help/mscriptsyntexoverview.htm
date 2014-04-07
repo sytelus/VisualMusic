@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+<title>MScript syntax overview - Visual Music</title>
+<style>@import url(vmusic.css);</style>
+</HEAD>
+<BODY><H1>MScript Syntax Overview</h1>
+<p>
+<P>Every MScript command has this format:</P>
+<CODE><table><tr><td>
+CommandName:Param1,Param2,...
+</td></tr></table></CODE>
+<P>|&lt;----one word without space----&gt;|</P>
+<P>Note that </P>
+<OL>
+
+<LI>MScript command do not have space anywhere in the 
+  entire command, not&nbsp; even in a parameter.
+  <LI>MScript is not case sensitive.
+  <LI>MScript commands could be separated by space, tab or new line. For 
+example, <br><br>
+<CODE><table><tr><td>
+LABEL:Top <br>
+a b c <br>
+JUMP:Top 
+</td></tr></table></CODE>
+<br>is equivalent to, <br><br>
+<CODE><table><tr><td>
+LABEL:Top a b c JUMP:Top
+</td></tr></table></CODE>
+<LI>There could be variable numbers of parameters for a 
+  command. 
+  
+<LI>If there is no parameters for the command you can just 
+  write CommandName. 
+  
+<LI>You can write variable name also instead of command 
+  name. for example, <br><br>
+<CODE><table><tr><td>
+      <P>&nbsp;SET:InstruNum,39&nbsp;'Set variable</P>
+      <P>&nbsp;'Play instrument according to the value in 
+variable.<BR>&nbsp; INSTRUMENT:InstruNum<BR>&nbsp; a b 
+      c</P>
+</td></tr></table></CODE><br>
+<P>&nbsp;Example2:</P>
+<CODE><table><tr><td>
+<P>&nbsp;'This script plays same notes for different instruments</P>
+<P>&nbsp;SET:InstruNum,127&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      'Initialise variable</P>
+<P>&nbsp;LABEL:PlayNote&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      'This is the start of the loop</P>
+<P>&nbsp;INSTRUMENT:InstruNum&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      'Set instrument and play notes<BR>&nbsp;c d e 
+f</P>
+<P>&nbsp;MATH:InstruNum,--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      'Next instrument to 
+      play and back to the loop<BR>&nbsp;IF:InstruNum,&gt;=,0,PlayNote</P>
+</td></tr></table></CODE>
+<LI>
+<P>Many MScript commands supports enhanced syntex. For 
+  example to set Octave you can do,<br><br>
+<CODE><table><tr><td>
+O:3
+</td></tr></table></CODE>          </P>
+<P>But say you want to increment octave value from whatever it's current value,</P>
+<P>you can do,
+<br><br>
+<CODE><table><tr><td>
+O:++
+</td></tr></table></CODE><br>
+To decrement current octave value,
+<br><br>
+<CODE><table><tr><td>
+O:--
+</td></tr></table></CODE>
+<P>However say you want to increase octave temporarily only for playing note.</P>
+<P>The conventional way for this is,
+<br><br>
+<CODE><table><tr><td>
+O:++ 		'Increment octave
+a 'Play the Note a
+O:-- 'Decrement octave
+</td></tr></table></CODE>
+<br><br>
+But you can do this in one line using extended syntax,
+<br><br>
+<CODE><table><tr><td>
+a:,,++
+</td></tr></table></CODE>
+<br>
+Here's the explanation of the above line:
+<P>Every Note command (i.e. a,a#,b,c,c#... etc) has many 
+  optional parameters. The 1st parameters tells for how long to play the note. 
+  Second parameter says for how long to keep silence after playing note, 3rd 
+  parameter says in which octave the note should be played. There are many other parameters too. Refer &lt;&gt;</P>
+<LI>The most major feature of the MScript is that you can 
+  run many scripts simultaneously. Each MScript is referred to as Tune also. You 
+  can start/stop another MScript from current one or run all of them 
+  simultaneously. Typically each MScript will play one different instrument. 
+  There is no limits of how many MScript tunes you could write but at any point 
+  of time only 16 MScripts could be active (a MScript is said to be active when 
+  it's running and is not playing long silence). Thus you can always have 16 
+  tunes running simultaneously. By clever use of start/stop and RELEASE command you can play upto 64 instruments at once!</LI></OL>
+<OL></OL>
+
+</BODY>
+</HTML>

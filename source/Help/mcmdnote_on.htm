@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+<title>Note By Name - MScript Commands - Visual Music</title>
+<style>@import url(vmusic.css);</style>
+</HEAD>
+<BODY>
+
+<H1>  NOTE_ON</H1>
+<br>
+<h2>Command Format:</h2> <EM>NOTE_ON:&lt;Note name 
+or number&gt;,[octave],[volume]</EM>           
+    
+<br><br>
+<h2>What it does:</h2>   Starts playing the 
+specified note but doesn't stops playing that note until you call NOFF or STOP. This 
+command is similar to a, a#, c c# etc commands to play note except that the interval for how long note 
+will be played is not specified. You can use this command to simultaneously play many notes 
+within&nbsp;a single tune but it's time taking to calculate and stop the notes. See the examples.
+<br><br>
+<h2>Short Form:</h2>        &nbsp;&nbsp;NON
+<br><br>
+<h2>Parameters:</h2><EM><STRONG>Note name or 
+number:</STRONG> </EM>   
+ Note name (i.e. a,a#,c,c# etc) or direct number of note you want to 
+start. <BR><EM><STRONG>Octave:</STRONG></EM> In which octave to play the note. 
+Also supports ++ etc operators. If note specified currently set octave is 
+used.<BR><STRONG><EM>Volume: </EM></STRONG> Volume with which the note should be played. Also supports 
+++ etc operators. If note specified currently set volume is used.
+<BR><BR>
+<h2>Value constraints:</h2><STRONG><EM>Note 
+Number:</EM></STRONG> 0-87 or 
+a,a#,b,c,c#,d,d#,e,e#,f,g,g#<BR><STRONG><EM>Octave:</EM></STRONG> 0 - 7 <BR><STRONG><EM>Volume: </EM></STRONG> 
+     0-100 
+<br><br>
+<h2>Remarks: </h2>This command is equivalent to commands 
+like a, a#, b. c# etc which plays the note specified by its name instead of 
+number. There is no performance issue between two versions. In general playing a 
+note by it's name is much more readable then it's number. However this command 
+is useful when you want to write the script to play the note whose number is 
+stored in a variable. Octave argument is optional but is desirable to improve 
+readability. If change the octave before stopping note you must supply octave 
+while turning the note off.<br>
+<h2>Examples:</h2>
+1. Play note for interval = 10
+<br><br><CODE><table><tr><td>
+INSTRUMENT:Flute <br>
+NOTE_ON:a# <BR>WAIT_FOR:10<BR>NOTE_OFF:a#
+</td></tr></table></CODE><br>
+2. Play the notes a# in octave 3 and c# in octave 4 simultaneously. Insert some delays so that both could be distinguished.
+<br><br><CODE><table><tr><td>
+      <P>INSTRUMENT:Flute <br>
+NOTE_ON:a#,3 'Start a#<BR>WAIT_FOR:3<BR>NOTE_ON:c#,4 'Start c#<BR>WAIT_FOR:50<BR>NOTE_OFF:a#,3 'Stop a#<BR>WAIT_FOR:10<BR>NOTE_OFF:c#,4 'Stop c# 
+</P> 
+       
+</td></tr></table></CODE><br>
+
+<h2>See Also:</h2> NOTE, NOFF, a, a#, b, c, c#,...<BR>
+
+</BODY>
+</HTML>

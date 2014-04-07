@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML dir=ltr>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+<title>INSTRUMENT Statement</title>
+<style>@import url(vmusic.css);</style>
+<BODY>
+
+<h1><a name="vastmsavesetting"></a>INSTRUMENT Statement</h1>
+<p>
+      What it
+      does: Sets the amount 
+of loudness with which next notes would be played</p>
+<p class=label>
+<b>Syntax</b></p>
+<p>
+<b>INSTRUMENT:&lt;Instrument name or 
+number&gt;</b></p>
+<p>
+The <STRONG>INSTRUMENT </STRONG>statement syntax 
+has these arguments</p>
+<table border=1 cellpadding=5 cols=2 frame=below rules=rows>
+<tr valign=top>
+<td class=label width="14%"><b>Part</b></td>
+<td class=label width="86%"><b>Description</b></td>
+</tr>
+<tr valign=top>
+<td width="14%"><b><i>  Instrument name  or number</i></b></td>
+<td width="86%">    Name or number of<BR>         
+       
+         the instrument.</td>
+</tr>
+</table><br>
+<p class=label><STRONG>Short Form</STRONG></p>
+<P class=label>I</P>
+<P class=label><STRONG>Remarks</STRONG></P>
+<P>   Prefer to specify   the instrument to play by it's name. You can drag and drop 
+instrument from Instrument Selector in the Visual Music.<BR><B></B></P>
+<P><STRONG>Examples</STRONG></P>
+1. Set Music Box instrument
+<br><br><CODE><table><tr><td>
+INSTRUMENT:Music_Box<BR>a b c
+</td></tr></table></CODE><br>
+
+2. Set instrument by number
+<br><br><CODE><table><tr><td>
+INSTRUMENT:118<BR>a b c
+</td></tr></table></CODE><br>
+
+3. Set instrument from variable
+<br><br><CODE><table><tr><td>
+SET:Count,28<BR>LABEL:TheLoop<BR>INSTRUMENT:Count<BR>c# a a b 
+a#<BR>MATH:Count,++<BR>IF:Count,&lt;,128,TheLoop
+</td></tr></table></CODE><br>
+
+<h2>See Also</h2>OCTAVE, VOLUME, SET, a, a#, b, c, c#,...  
+    
+  
+</BODY>
+</HTML>

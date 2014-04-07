@@ -1,0 +1,58 @@
+19. Creat sample tunes.
+10. Help file, web jump, feedback
+
+Pending:
+Command lines
+3. DDE commands.
+
+Done:
+1. Capture the tab in edit.
+2. Implement feed back. - basic only. Feedback for volume, instrument doesn't work.
+5. Event Execution Stoped in InstructionProcessor -> MScripts.
+6. Additional instru info
+9. Volume settings.
+18. Preserve version while saving
+14. /RegIcon switch.
+4. Version & signature stratagy.
+16. Copy/Paste
+11. StopAllNote - use GetVolume/SetVolume
+12. if ini file not found.
+13. midi error messages.
+8. Auto midiHandle handling.
+7. Channel pooling, auto release.
+17. Auto release on long silence
+15. Exit, Release instruction.
+---------------------------------
+1. Software timer
+2. Compilation errors
+-  Add Stop/Pause instructions for sub.
+3. Control for keyboard
+4. Sorted listbox
+5. Open/Save to file
+5. Good UI with menu.
+
+--------------------------------
+
+1. Save/Load/Clear in class
+2. Recorder class
+3. Non ActiveX timer
+4. Keyboard in Activex
+-. Note index to Note name convertion with Octave+/- info
+5. InstructionProcessor and MScriptCompiler error handling.
+6. Commands for Stop, Pause, Play(ExitIfAlreadyPlaying).
+7. Commands for var value output, comments, stop until key pressed, visual clue in keyboard, msgbox
+
+--------------------------------------------
+1.1 Version
+___________
+1. Fixed Help file not opening bug.
+2. Implemented proper Visual Feedback and made it default true.
+3. Implemented multi key recording.
+4. Implemented selected text only compilation.
+5. About box centered to owner.
+6. Added Minimise button.
+7. New items for Join Mailing List and Send Your Tunes in Help menu.
+8. Enables Script and Tune lable but removed their access keys.
+9. Script lable reflats which tune is selected.
+10. Removed resizing and added minimise button in debug window.
+11. Added professional keyboard layout option.

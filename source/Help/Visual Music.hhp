@@ -1,0 +1,16 @@
+[OPTIONS]
+Binary TOC=Yes
+Compatibility=1.0
+Compiled file=Visual Music.chm
+Contents file=Table of Contents.hhc
+Default topic=starthere.htm
+Display compile progress=Yes
+Enhanced decompilation=Yes
+Full text search stop list file=Visual Music.stp
+Full-text search=Yes
+Language=0x409 English (United States)
+Title=Visual Music Help
+
+
+[INFOTYPES]
+

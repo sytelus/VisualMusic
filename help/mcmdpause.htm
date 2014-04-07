@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML dir=ltr>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+<title>PAUSE Statement</title>
+<style>@import url(vmusic.css);</style>
+<BODY>
+
+<h1><a name="vastmsavesetting"></a><B><B><B><STRONG><B><B><B><B><STRONG><B><B><B><B><STRONG><B><B><B><B><STRONG><B><B><B>PAUSE 
+</B></B></B></STRONG></B> 
+</B></B></B></STRONG></B> 
+</B></B></B></STRONG></B> 
+</B></B></B></STRONG> 
+</B> </B> </B> Statement</h1>
+<p>
+     
+   Pauses another running tune or itself.</p>
+<p class=label>
+<b>Syntax</b></p>
+<b><STRONG><B><B><B>
+<P>PAUSE:<EM>[Tune Name]</EM></P>
+<P>  
+</B></B></B></STRONG>   
+</b>
+The <STRONG><B><B><B><B><STRONG><B><B><B><B><STRONG><B><B><B><B><STRONG><B><B><B>PAUSE 
+</B></B></B></STRONG></B> 
+</B></B></B></STRONG></B> 
+</B></B></B></STRONG></B> </B> </B> 
+</B> </STRONG>statement 
+syntax has this arguments</P>
+<table border=1 cellpadding=5 cols=2 frame=below rules=rows>
+<tr valign=top>
+<td class=label width="14%"><b>Part</b></td>
+<td class=label width="86%"><b>Description</b></td>
+</tr>
+<tr valign=top>
+<td width="14%"><b><i>          Tune Name</i></b></td>
+<td width="86%">         
+       
+         Name of the         
+       
+         tune that needs to be paused. If         
+       
+           no Tune Name specified then         
+       
+           currently running tune is 
+      paused.<BR>         
+       
+                
+                  
+       
+                      
+       
+                       
+       
+          </td>
+</tr>
+</table><br>
+<p class=label><STRONG>Short Form</STRONG></p>
+<P class=label>None</P>
+<P class=label><STRONG>Remarks</STRONG></P>
+<P>          
+                
+                  
+                
+            This instruction allows you pause other running tunes or 
+itself. You can continue running other tunes by issuing PLAY instruction. But          
+                
+                  
+                
+            if 
+a tune pauses itself it can not restart itself!</P>
+<P><STRONG>Examples</STRONG></P>
+1. Write in Tune1 following:
+<br><br><CODE><table><tr><td>
+NOTE_INTERVAL:5<BR>a b a a# b <BR>PLAY:Tune2<BR>a 
+a# c <BR>PAUSE:Tune2 'Tune2 execution paused<BR>c# d a a a# <BR>PLAY:Tune2 
+      'Tune2 execution resumed<BR>c d d# 
+</td></tr></table></CODE><br>
+
+2. Write in Tune2 following:
+<br><br><CODE><table><tr><td>
+NOTE_INTERVAL:5<BR>INSTRUMENT:Sitar<BR>a b a 
+a# b a a# c c# d a a a# c d d#
+</td></tr></table>
+<P>Play the Tune1 only.</CODE></P>
+
+<h2>See Also</h2>PLAY, STOP, EXIT
+<P>  <BR>&nbsp;</P>         
+    
+  
+</BODY>
+</HTML>

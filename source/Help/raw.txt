@@ -1,0 +1,1452 @@
+Here's the visual music info...
+
+Start Here
+
+What's Visual Music all about?
+Visual Music lets you play around 128 instruments on your PC including bass
+guitar, pads, bagpiper and even whistle! You can even record what you are
+playing, edit it and save it in a file. If you don't know how to play
+synthesiser keyboard, it provides you a easy to use scripting language to
+create music just by telling what key in which instrument you want to play
+for how much time! 
+
+What is Note, Octave and bla bla bla?
+If you have looked at piano's keyboard, you would have noticed the strange
+pattern of black and white keys that repeats itself. More closely, well, you
+would have seen that there is total 12 black and white keys in each pattern.
+Each of this 12 key produces it's own sound called a mucical Note. This 12
+notes are named as a,a#,b,c,c#,d,d#,e,e#,f,g,g#. The note with "#" is called
+minor note while one without "#" is called major note. And each set of these
+12 keys that makes a pattern is called Octave. So if a piono has 84 keys it
+would have 84/12=7 octaves (because each octave has 12 notes). The first
+octave will start as left side of piono and last one will end at right side
+of piono. Lower octave gives notes of low frequency while higher octave
+gives notes of higher frequency. But each octave has exactly same pattern of
+notes.
+
+So, when you want to make some musical sound, you should...
+1. Tell which note you want to play.
+2. Tell in which octave the note is.
+
+Thus a note and a octave will uniquely identifies the key you should press
+in the piono.
+
+There is also something called Pan. The Pan is nothing but a value that
+determines whether every key in the piono has equal volume or whether left
+side key has higher volume. 
+
+
+Learn to use Visual Music in 5 min!
+This is the extra fast tour of Visual Music to quickly let you know most out
+of Visual Music!!
+
+Doing Basics:
+1. Click on any key in the piono and see what's happens.
+2. Press these keys in sequence: Q W E R T Y. Do you here anything?
+3. Click on any instrument you like and repeat step 1 & 2.
+4. Press the Octave button "2" and press piono keys again. Hear any
+difference?
+
+How To Do Recording?
+1. At the lower right side there's a button with the symbol of colorful CD.
+It's button to start recording. And just above that there's button to stop
+recording.
+2. Press the Record button and then click on the piono keys. You will see
+something getting written each time when you press the piono keys. You can
+edit it if you like. To stop recording press that Stop button(or click on
+Tune > Stop Play/Record menu).
+3. Now to replay what you have recorded, press the Play button (just above
+the Stop button) or click the menu Tune > Play Selected Tune.
+4. To save your recording Press on the Save button on top toolbar or click
+File > Save menu.
+
+How to write script?
+See the next section!
+
+
+MScript programming super quick guide:
+
+If you know slightest programming, this few steps will teach you MScript by
+example in minutes.
+
+For writing MScript press <> at any time or click on the "Script For The
+Tune" box.
+To run the MScript just press F5.
+
+Try out each of the following scripts and see what you hear and then read
+the explanation here!
+
+1. Write the following script and run it.
+a b c
+   Explanation: Each musical note is a command. Thus this MScript plays 3
+musical notes a,b and c. Musical notes available are
+a,a#,b,c,c#,d,d#,e,e#,f,g,g#
+
+2. Write the following script and run it.
+INSTRUMENT:Sitar
+a b c
+   Explanation: The keyword INSTRUMENT sets the instrument you want to play.
+Note that instrument could be specified by number or name and there is no
+space around ":".
+
+3. Write the following script and run it.
+LABEL:Top
+a b c
+JUMP:Top
+   Explanation: The LABEL command marks a position in the script. The JUMP
+command tells where to jump in the script. So the notes a b c will be played
+repetitively.
+
+4. Write the following script and run it.
+LABEL:Top
+a b c:7,5
+JUMP:Top
+   Explanation: This one is similar to above except that the Note c has
+additional parameters. The first parameter spacifies for how much time Note
+c should be played. The second parameter specifies for how much time to
+pause before going to next command, i.e., after playing a note how much time
+to keep silence. You also use SILENCE command for this. For example above is
+same as this one:
+
+LABEL:Top
+a b c:7 SILENCE:5
+JUMP:Top
+
+So the question could be, what's the default value if you don't explicitly
+specifie how long to play the note. Refer this section for that!
+
+5. Write the following script and run it.
+SET:Count,3
+LABEL:TOP
+  a b c
+  MATH:Count,--
+  IF:Count,>,0,TOP,BELOW
+       LABLE:BELOW
+          d e f
+  JUMP:TOP
+
+   Explanation: The SET command sets the value in the variable. MATH command
+does some mathematical operation on the variable (here "--" means decrement
+by 1). Lastly the IF command checks if variable is set to perticular value
+and jumps to specified location acordingly.
+
+6. Write the following script in Tune1.
+SET:Count,3
+LABEL:TOP
+  a b c
+  MATH:Count,--
+  IF:Count,>,0,TOP,BELOW
+       LABLE:BELOW
+          d e f
+  JUMP:TOP
+
+Write the following script in Tune2.
+SET:Count,3
+LABEL:TOP
+  a b c
+  MATH:Count,--
+  IF:Count,>,0,TOP,BELOW
+       LABLE:BELOW
+          d e f
+  JUMP:TOP
+
+
+Press Play All Tunes button. You will hear multiple instruments
+being played simultaneously. You can also play tunes individually. 
+
+7. Managing tunes.
+You can rename the existing tune, add new tune or delete the one.
+
+
+MScript syntex overview:
+
+Every MScript command has this format:
+
+
+CommandName:Param1,Param2,...
+
+|<--one word without space-->|
+
+
+Note that 
+1. MScript command do not have space anywhere in the enitre command, not
+even in a parameter.
+.. MScript is not case sensitive.
+.. MScript commands could be seperated by space, tab or new line. For
+example
+LABEL:Top
+a b c
+JUMP:Top
+
+is equivalent to
+
+LABEL:Top a b c JUMP:Top
+2. There could be variable numbers of parameters for a command.
+3. If there is no parameters for the command you can just write CommandName.
+4. You can write variable name also instead of command name. for example...
+
+SET:InstruNum,39 'Set variable
+
+'Play instrument according to the value in variable.
+INSTRUMENT:InstruNum
+a b c
+
+Example2:
+
+'This script plays same notes for different intruments
+
+SET:InstruNum,127 'Initialise variable
+
+LABLE:PlayNote 'This is the start of the loop
+
+INSTRUMENT:InstruNum 'Set instrument and play notes
+c d e f
+
+MATH:InstruNum,-- 'Next instrument to play and back to the
+loop
+IF:InstruNum,>=,0,PlayNote
+
+.. Many MScript commands supports enhanced syntex. For example to set Octave
+you can do...
+O:3
+
+But say you want to increment octave value from whatever it's current value,
+you can do...
+O:++
+To decrement current octave value,
+O:--
+
+However say you want to increase octave temporarily only for playing note.
+The conventional way for this is..
+O:++ 'Increment octave
+a 'Play the Note a
+O:-- 'Decrement octave
+
+But you can do this in one line using extended syntex
+
+a:,,++
+
+Explanation:
+Every Note command (i.e. a,a#,b,c,c#... etc) has many optional
+parameters. The 1st parameters tells for how long to play the note. Second
+parameter says for how long to keep silence after playing note, 3rd
+parameter says in which octave the note should be played.
+There are many other parameters too. Refere <>
+
+
+5. The most major feature of the MScript is that you can run many scripts
+simultaneoulsy. Each MScript is refered to as Tune also. You can start/stop
+another MScript from current one or run all of them simultaneously.
+Typically each MScript will play one different instrument. There is no
+limits of how many MScript tunes you could write but at any point of time
+only 16 MScripts could be active (a MScript is said to be active when it's
+running and is not playing long silence). Thus you can always have 16 tunes
+running simultaneously. By clever use of start/stop and RELEASE command you
+can play upto 64 instruments at once!
+
+
+MScript coding standard:
+1. Each MScript command except names of the note should be in capital.
+2. MScript variables should be mixed case and starts with capital letter.
+3. Lables are also mixed case and starts with capital letter.
+4. Try to avoid writing intrument number instead of instrument name. For
+example INSTRUMENT:Sitar is more preferable then INSTRUMENT:49.
+5. MScript supports 3 styles of comments:
+'The VB style comment supported
+--SQL Server style comment supported
+file://C++ style comment supported
+
+   Try to use VB style comments as standard.
+6. MScript supports short names for almost all commands. For example instead
+of writing INSTRUMENT:Sitar you can write I:Sitar. This short names are
+supported to do trial and error quickly and should not be used in released
+version of your script.
+
+FAQ
+1. Is this program freeware?
+2. In which language it was written? Can I have source code?
+3. To whome do I contact I get error or doesn't know how to use it?
+4. Who wrote this program?
+5. How much hours have been spent in writing this program?
+6. Can I take part in development?
+7. Why a new language MScript is invented?
+8. Where are the automation objects for Visual Music?
+9. 
+
+Keyboard shortcuts
+Play notes: All keys in the row from "Q" to "]"
+Play tune: F5
+Stop Play/recording: Ctrl + T
+
+Features and functionality:
+Behind the tiny looking screens of Visual Music there are tons of code and
+features. Here's few sample...
+1. Visual Music implements full transparent MIDI channel pooling. The sound
+card can allow only 16 channels simultaneously. However by smart suffeling,
+Visual Music allows you to create much more tunes and play them
+simultaneously.
+2. Complete COM based object oriented architecture. Visual Music is just the
+front end to the ActiveX server objects that actually does the work. You too
+can build your own frontend using these ActiveX objects with very little
+code or control the Visual Music from VBScript or VBA.
+3. DDE support: Visual Music also supports many basic commands through DDE.
+You can control existing Visual Music frontend by writing your own DDE
+client.
+4. Drag-n-drop of instruments in to the script.
+5. MIDI device crash recovery. If by chance Visual Music crahses, it still
+will recover and unlock MIDI device when it runs next time.
+6. You can load .MSC file in to Visual Music by clicking it in the explorer.
+7. Visual Music contains buil in compiler and virtual machine for MScript.
+8. You can run lots of MScripts (tunes) simultaneouly. Currently it's done
+by virtual multithreading.
+9. It supports on-the-fly compilation.
+10. Versatile MIDI Engine. MIDI engine is the heart of the Visual Music
+which actually supports aliased handles, on-fly-channel allocation, channel
+pooling and more!
+11. Supports icon/file extension from command line switch.
+12. Visual feedback while playing recorded tune.
+13. Smart versionig, embedded timer information and signature protected
+MScript file format.
+14. Active flat-look buttons. 3D icons.
+15. Copy/Past of entire MScripts.
+16. Additional info on instruments.
+17. Advanced search on instruments.
+18. Favorite support for instruments.
+19. Sample playing while selecting instruments.
+20. 20 MScript instructions to control MIDI device.
+21. Future support for add-ins and extendibility.
+22. Much of the features of backend ActiveX servers is not yet implemented
+in fronend.
+
+Future enhancement:
+1. Very oddly, Visual Music will not fit in to 640 X 480. You will need 800
+X 600 atleast.
+2. No objects curretly exposed outside of EXE to prevent versioning problems
+for the time being.
+3. Wave file mixing
+4. Save to MIDI/Wav
+5. Muli key press in recording support.
+6. Full DDE server and addition command GET_MIDI_HANDLE.
+7. Tune Sequence Editor
+8. Full drag and drop support
+9. Play from browser support. Browser plug-in for <MSCRIPT> tag.
+10. True multi threading for instruction processor.
+11. Script debugging, immediate & watch window, break point instructions
+12. User Interface MSCript Commands - MsgBox, InputBox, PRINT, WaitForKey,
+OnKeyGo
+13. Low level commands to directli control MIDIEng
+14. MIDI input device support.
+
+Using Visual Music
+
+Using Keyboard: It's easy. Click on any key with mouse. Or press the Q,W,E,R
+etc keys on your keyboard!
+Using InstrumentSelector: Just click on anything to select. Click on <> to
+add the instruments to your favorite list. 
+Using MScript Editor:
+Using other controls:
+File operations:
+Tips:
+
+MScript Reference:
+What is MScript?
+MScript is the specially created language to create music! You might ask
+that already so many languages exist so why a new one. Well, I too tried to
+implement music scripting with existing language but soon realised that I
+want more. By making this decision I was at disadvantage howvever because I
+would not only have to create compiler and virtual machines but also
+debuging environment and detailed documentation. But I thought there wasn't
+a easy way out once I imagined how a language should look like. Rest of the
+things I made easy by making language extreemly simple to parse and
+implement (almost no lex analysis needed). But that's also makes
+non-programmers to learn this language very easy because there isn't much
+syntex rules, variables, types, etc. But it still allows you to create good
+music! One of the most important reason I choose upon new language was that
+Visual Music required to run many scripts simultaneoulsy. Even it should be
+easy to run/stop script from another script. Almost all traditional
+languages supports functions that runs sequencially, i.e. you can't run many
+different functions simultaneoulsy, share variables and also allow to
+control each other unless you do some complex multithreading. Unfortunetly
+this isn't a easy task even for experienced programmers, not to talk of
+musicians. And hence MScript comes in to picture!!
+
+MScript features
+
+1. Very simple structure with least numbers of syntex rules.
+2. Anybody can write or extend compiler in almost no time!
+.. Every MScript command is extensible by adding more optional parameters.
+.. Suports 3 styles of comments.
+.. Supports short version for most of the command to quickly do trial and
+error.
+3. Gives you all elementry commands which are easy to grasp and still enough
+for full control!
+4. It's interpreted language.
+5. Simultaneous run/ control others, share variables.
+6. Free flaw - limit by space, tab or new line.
+7. On-fly-compilation - no binaries are produced! This is possible due to
+very easy structure and there's almost no time required in parsing.
+
+
+Timing in MScript (for musical instruction):
+The time interval specified how long a note will be played. MScript commands
+allows you to play any notes for the time interval as specified by you.
+However for simplicity, time interval is not specified in the units of milli
+seconds or seconds but in terms of a special unit called MScript Time
+Interval. Each MScript time interval is 60ms long. So if you say "Play the
+note c# for interval = 5" it means "Play the note c# for 300ms". The default
+time interval for a note is 4 (i.e. 240ms). So, the command c# will play the
+note "c#" for 240ms by default. But the command c#:6 will play the note note
+"c#" for 6*60=360ms.
+You can change this default time interval by NOTE_INTERVAL command. For
+example,
+C# 'Play the note C# for interval=4 (default)
+NOTE_INTERVAL:7 'Change the standard note interval
+C# 'Play the note C# for interval=7 (new
+default)
+C#:10 'Play the note C# for interval=10 (override
+the default)
+
+
+Timing in MScript (for non-musical instruction):
+The none musical instructions (i.e. instructions that does not play any
+musical notes or silence) like JUMP, MATH, IF etc essentially do not take
+any time to execute. This means that non-musical instruction doesn't
+introduces any significant delay. For example,
+To execute following 4 instructions 4 clock cycles would be required because
+each note is played for 1 clock cycle if no interval is specified:
+a b c d
+
+To execute following 1 instruction, again 4 clock cycles would be required
+because note is specified to run for 4 cycles:
+a:4
+
+However to execute following 4 instructions it will still require only 4
+cycles because non-musical instructions are executed one after another
+irrespective of clock cycle:
+a:4
+IF:Var1,<>,5,SomeWhere 'Non musical instruction
+SET:Var1,5 'Non musical instruction
+MATH:Var1,++ 'Non musical instruction
+
+
+Simple MScript commands
+1. How to play notes
+2. How to specified Note interval
+2. How to repeat commands (looping)
+3. How to set variables
+4. How to check variable values
+5. How to set instrumet, volume, octave
+6. How to start/stop other tune
+
+Complete command listing
+
+Note paramets inside <> is compulsary while that inside [] are optional.
+
+1. Command Name: Note_Name:[Note Interval],[Silence
+interval],[octave],[volume]
+where Note_Name is any of this: a, a#, b, c, c#, d ,d#, e,
+e#, f, g#
+
+What it does: Playes the specified note.
+
+Short Form: There isn't any short form for this command.
+
+Parameters: Note Interval: How long the note should be
+played. If note specified standard note interval is used (default is 4).
+Silence Interval: How long to keep silence
+after playing the note. If note specified standard silence interval is used
+(default is 4).
+Octave: In which octave to play the note.
+Also supports ++ etc operators. If note specified currently set octave is
+used.
+Volume: Volume with which the note should be
+played. Also supports ++ etc operators. If note specified currently set
+volume is used.
+
+Value constraints: Note Interval: If 0, Note is played for
+shortest interval limited only by CPU speed
+Silence Interval: If 0, no silence is
+inserted, i.e., if second note is there it will be played immediately.
+Octave: 0 - 7. 
+Volume: 0-100. No error check in range. 
+
+Remarks: 
+
+Examples: Click here to know how to run examples.
+1. 'Play notes
+a b c c# d a
+
+2. 'Play the note a# for the interval =
+5 (each interval is of 60ms)
+a#:5
+
+3. 'Play the note c for the interval =
+5 followed by silence for interval of 2 followed by note c# with default
+interval
+c:5,2 c#
+
+4. 'Play the note c# in the
+octave=default octave + 3 with volume=50 interval = 5 followed by silence
+for interval of 2 
+c#:5,2,++3,50
+
+See Also: NOTE, NON, NOFF
+
+
+2. Command Name: Note:<Note Number>,[Note Interval],[Silence interval],[octave],[volume]
+
+What it does: Playes the note specified by the given
+number. This basically corresponds to the key number of the piono. A full
+piono could have 88 keys (0 at the left and 87 at right). You can specifie
+which key you want to press.
+
+Short Form: N
+
+Parameters: Note Number: Direct number of note you want
+to play. If note specified last note will be played.
+Note Interval: How long the note should be
+played. If note specified standard note interval is used (default is 4).
+Silence Interval: How long to keep silence
+after playing the note. If note specified standard silence interval is used
+(default is 4).
+Octave: In which octave to play the note.
+Also supports ++ etc operators. If note specified currently set octave is
+used.
+Volume: Volume with which the note should be
+played. Also supports ++ etc operators. If note specified currently set
+volume is used.
+
+Value constraints: Note Number: 0-87, no error for the invalid
+value. 
+Note Interval: If 0, Note is played for
+shortest interval limited only by CPU speed
+Silence Interval: If 0, no silence is
+inserted, i.e., if second note is there it will be played immediately.
+Octave: 0 - 7. 
+Volume: 0-100. 
+
+Remarks: This command is equivalent to commands like
+a, a#, b. c# etc which playes the note specified by its name instead of
+number. There is no performance issue between two versions. In general
+playing a note by it's name is much more readable then it's number. Howvever
+this command is useful when you want to write the script to play the note
+whose number is stored in a variable.
+
+Examples: Click here to know how to run examples.
+1. 'Play notes
+NOTE:46 
+NOTE:48,2,3
+NOTE:50
+
+2. 'Play the note specified by variable
+SET:NoteNum,50
+NOTE:NoteNum
+
+3. 'Play notes in a loop
+SET:NoteNum,50
+LABLE:NextNote
+NOTE:NoteNum,7
+MATH:NoteNum,--
+IF:NoteNum,>,88,ExitLoop,NextNote
+LABEL:ExitLoop
+EXIT
+
+See Also: NON, NOFF, a, a#, b, c, c#,...
+
+
+3. Command Name: NOTE_ON:<Note name or
+number>,[octave],[volume]
+
+What it does: Starts playing the specified note but
+doesn't stops playing that note until you call NOFF or STOP. This command is
+similar to a, a#, c c# etc commands to play note except that the interval
+for how long note will be played is up to you. You can use this command to
+simultaneously play many notes withing the single tune but it's time taking
+to calculate and stop the notes. See the examples. 
+
+Short Form: NON
+
+Parameters: Note name or number: Note name (i.e.
+a,a#,c,c# etc) or direct number of note you want to start. 
+Octave: In which octave to play the note.
+Also supports ++ etc operators. If note specified currently set octave is
+used.
+Volume: Volume with which the note should be
+played. Also supports ++ etc operators. If note specified currently set
+volume is used.
+
+Value constraints: Note Number: 0-87 or
+a,a#,b,c,c#,d,d#,e,e#,f,g,g#
+Octave: 0 - 7 
+Volume: 0-100 
+
+Remarks: This command is equivalent to commands like
+a, a#, b. c# etc which playes the note specified by its name instead of
+number. There is no performance issue between two versions. In general
+playing a note by it's name is much more readable then it's number. Howvever
+this command is useful when you want to write the script to play the note
+whose number is stored in a variable. Octave argument is optional but is
+desirable to improve readability. If change the octave before stoping note
+you must supply octave while turning the note off.
+
+Examples: 1. 'Play note for interval = 10
+NOTE_ON:a# 
+WAIT_FOR:10
+NOTE_OFF:a#
+
+2. 'Play the notes a# in octave 3 and
+c# in octave 4 simultaneously. Insert some delays so that both could be
+distingushed.
+NOTE_ON:a#,3 'Start a#
+WAIT_FOR:3
+NOTE_ON:c#,4 'Start c#
+WAIT_FOR:50
+NOTE_OFF:a#,3 'Stop a#
+WAIT_FOR:10
+NOTE_OFF:c#,4 'Stop c#
+
+See Also: NOTE, NOFF, a, a#, b, c, c#,...
+
+
+4. Command Name: LABEL:<Label name>
+
+What it does: Labels the location in code where you can
+jump later.
+
+Short Form: L
+
+Parameters: Label name: Name of label you want to give
+
+Value constraints: Label name: Can not contain space. You can't
+have two labels with same name.
+
+Remarks: This instruction use used to give a name to
+the location where you can jump later using JUMP instruction or IF
+instruction.
+
+Examples: 1. 'Play the note c# again and again
+
+LABEL:DoItAgain
+c#
+JUMP:DoItAgain
+
+2. 'Play the notes c# 5 times
+
+SET:Count,5
+LABEL:TheLoop
+c#
+MATH:Count,--
+IF:Count,>,0,TheLoop
+
+
+See Also: JUMP, IF
+
+
+5. Command Name: JUMP:<Label name>
+
+What it does: Jumps to the immediate next location where
+the specified label is there.
+
+Short Form: J
+
+Parameters: Label name: Name of label where you want to
+jump
+
+Value constraints: Label name: Can not contain space. Label
+must exist or you will get run time error.
+
+Remarks: Use JUMP instruction to repeat perticular
+commands again and again.
+
+Examples: 1. 'Play the note c# again and again
+
+LABEL:DoItAgain
+c#
+JUMP:DoItAgain
+
+See Also: LABEl, IF
+
+
+6. Command Name: IF:<Variable>,<Condition>,<Value>,<label to
+jump on if condition is True>,[label to jump on if condition is False]
+
+What it does: Checks the value of specified variable to
+see if the condition is satiesfied and accordingly jumps to specified lable.
+
+Short Form: No short form for this instruction.
+
+Parameters: Variable: Name of the variable whoes value
+you want to set.
+Condition: Conditions specified by,
+> : Greater then
+< : Less then
+
+<= : Less then or equal to
+>= : Greater then or equal to
+== : Equal to
+<> : Not equal to 
+Value: Value to be compared with the value
+of the variable
+Label to jump on if condition is True: If
+condition evaluates to true the jump is made to this label
+Label to jump on if condition is False: If
+condition evaluates to false the jump is made to this label. Note that this
+is optional argument.
+
+Value constraints: Variable: Must already been set to some
+value using SET instruction.
+Label to jump on if condition is True: Label
+must be declared using LABEL i instruction.
+Label to jump on if condition is False:
+Label must be declared using LABEL i instruction.
+
+Remarks: This is the basic IF structure that you can
+use to make decision of where to divert the program flow.
+
+Examples: 1. 'Play the notes c# 5 times
+
+SET:Count,5
+LABEL:TheLoop
+c#
+MATH:Count,--
+IF:Count,>,0,TheLoop
+
+See Also: LABEL, SET, JUMP
+
+
+7. Command Name: INSTRUMENT:<Instrument name or number>
+
+What it does: Set the instrument in which the notes would
+be played.
+
+Short Form: I
+
+Parameters: Instrument name or number: Name or number of
+the instrument. 
+
+Value constraints: Instrument name must not have spaces. If you
+want to spacifie instrument like "Music Box" specifie it as "Music_Box". As
+usual, you can also specifie the variable name whose value may contain
+intrument number. But variable can not contain instrument name. 
+
+Remarks: Prefer to specify the instrument to play by
+it's name. You can drag and drop instrument from Instrument Selector in the
+Visual Music.
+
+Examples: 1. 
+INSTRUMENT:Music_Box
+a b c
+
+2. 
+INSTRUMENT:118
+a b c
+
+3. 
+
+SET:Count,28
+LABEL:TheLoop
+INSTRUMENT:Count
+c# a a b a#
+MATH:Count,++
+IF:Count,<,128,TheLoop
+
+See Also: NOTE, OCTAVE, VOLUME, SET, a, a#, b, c,
+c#,...
+
+
+8. Command Name: VOLUME:<Volume number>
+
+What it does: Sets the amount of loudness with which next
+notes would be played
+
+Short Form: V
+
+Parameters: Volume number: Amount of loudness
+
+Value constraints: Volume number: 0-100. Heigher values could
+be specified but not recommanded.
+
+Remarks: Default value is 100 (i.e. full). You can
+specifie values as high as 256 but it produces some unpredictable effects.
+
+Examples: 1. 
+VOLUME:100
+a b c
+
+VOLUME:50
+a b c
+
+2. 
+
+SET:Count,100
+LABEL:TheLoop
+VOLUME:Count
+c# a a
+MATH:Count,--
+IF:Count,>,0,TheLoop
+
+See Also: OCTAVE, VOLUME, SET, a, a#, b, c, c#,...
+
+
+9. Command Name: OCTAVE:<Octave number>
+
+What it does: Sets the octave with which next notes would
+be played
+
+Short Form: O
+
+Parameters: Octave number
+
+Value constraints: Volume number: 0-7. Heigher values could be
+specified but not recommanded.
+
+Remarks: This value is used only if you do not
+specifie the octave as the part of the instruction. Default value is 4. You
+can specifie values as high as 256 but it produces some unpredictable
+effects.
+
+Examples: 1. 
+OCTAVE:2
+a b c
+
+OCTAVE:6
+a b c
+
+2. 
+
+SET:Count,7
+LABEL:TheLoop
+OCTAVE:Count
+c# a a
+MATH:Count,--
+IF:Count,>,0,TheLoop
+
+See Also: PAN, VOLUME, SET, a, a#, b, c, c#,...
+
+
+10. Command Name: PAN:<Pan value>
+
+What it does: Sets the pan value. It is the value that
+determines whether to play lower notes with more volume or not.
+
+Short Form: No short form for this instruction.
+
+Parameters: Pan value
+
+Value constraints: Pan value: 0-100. 
+
+Remarks: Default value is 64 which means all notes
+are played at equal volume.
+
+Examples: 1. 
+PAN:22
+O:2 a#
+O:6 a#
+
+PAN:100
+O:2 a#
+O:6 a#
+
+2. 
+
+SET:Count,87
+PAN:20
+LABEL:TheLoop
+NOTE:Count
+MATH:Count,--
+IF:Count,>,0,TheLoop
+
+See Also: OCTAVE, VOLUME, SET, a, a#, b, c, c#,...
+
+
+11. Command Name: NOTE_INTERVAL:<interval value>
+
+What it does: Specifies the value of the note interval
+with which note will be played if no value is supplied as the part of note
+instruction.
+
+Short Form: NI
+
+Parameters: interval value: One interval is by default
+equals to 60ms
+
+Value constraints: interval value: If 0, note will be played
+for shortest amount of time, only limited by CPU speed.
+
+Remarks: Default value is 4. The value specified by
+NOTE_INTERVAL command is used only if no such value is supplied as the part
+of instruction to play the note.
+
+Examples: 1. 
+c# 'Play note for default
+interval=4
+
+NOTE_INTERVAL:8 
+c# 'Play note for new default
+interval=8
+
+c#:3 'Play note for interval=3
+
+See Also: SILENCE_INTERVAL, NOTE, a, a#, b, c, c#,...
+
+
+12. Command Name: SILENCE_INTERVAL:<interval value>
+
+What it does: Specifies the value of the interval for
+which silence is maintained after playing the note.
+
+Short Form: SI
+
+Parameters: interval value: One interval is by default
+equals to 60ms
+
+Value constraints: interval value: If 0, next instruction is
+executed immediatly.
+
+Remarks: Default value is 4. Silence could be also
+inserted by SILENCE command. The value specified by SILENCE_INTERVAL command
+is used only if no such value is supplied as the part of instruction to play
+the note.
+
+Examples: 1. 
+c#  a# 'Play the note followed by
+silence for default interval=4
+
+SILENCE_INTERVAL:8 
+c#  a# 'Play the note followed by
+silence for new default interval=8
+
+c#:,3 a# 'Play the note
+followed by silence for interval=3
+
+See Also: NOTE_INTERVAL, SILENCE, WAIT_FOR, NOTE, a,
+a#, b, c, c#,...
+
+
+12. Command Name: WAIT_FOR:<interval value>
+
+What it does: Does nothing until specified interval is
+passed out.
+
+Short Form: WF
+
+Parameters: interval value: One interval is by default
+equals to 60ms
+
+Value constraints: interval value: If 0, no wait is doen and
+next instruction is executed immediatly.
+
+Remarks: Default value is 4. This command is exacly
+same as SILENCE command. 
+
+Examples: 1. 
+c# 
+WAIT_FOR:10 
+a# 
+
+2. 'Exactly same thing
+
+c# 
+SILENCE:10
+a# 
+
+3. 'Exactly same thing
+
+c#:,10 
+a# 
+
+See Also: NOTE_INTERVAL, SILENCE_INTERVAL, SILENCE,
+NOTE, a, a#, b, c, c#,...
+
+
+13. Command Name: SILENCE:<interval value>
+
+What it does: Does nothing until specified interval is
+passed out.
+
+Short Form: S
+
+Parameters: interval value: One interval is by default
+equals to 60ms
+
+Value constraints: interval value: If 0, no wait is doen and
+next instruction is executed immediatly.
+
+Remarks: Default value is 4. This command is exacly
+same as WAIT_FOR command. 
+
+Examples: 1. 
+a# 
+SILENCE:10
+a# 
+
+2. 'Exactly same thing
+
+a# 
+WAIT_FOR:10 
+a# 
+
+3. 'Exactly same thing
+
+c#:,10 
+a# 
+
+See Also: NOTE_INTERVAL, SILENCE_INTERVAL, WAIT_FOR,
+NOTE, a, a#, b, c, c#,...
+
+
+14. Command Name: TEMPO:<Slow down factor>
+
+What it does: Slows down the execution by the factor of
+the specified value. It's kind of slow motion in video.
+
+Short Form: No short form for this instruction.
+
+Parameters: Slow down factor: The factor with which
+system clock would be slowed down.
+
+Value constraints: Can not be less then 1. Upper value depends
+on internal timer value, typically  500000.
+
+Remarks: Default value is 1. This command slows down
+the whole script. Useful to inspect what's happening when notes are played
+very fast.
+
+Examples: 1. 
+a a# b c# 'Normal speed
+
+TEMPO:3
+
+a a# b c# 'Now in 3 times
+lower speed
+
+See Also: NOTE_INTERVAL, SILENCE_INTERVAL, WAIT_FOR,
+NOTE, a, a#, b, c, c#,...
+
+
+15. Command Name: SET:<Variable Name>,[Variable Value]
+
+What it does: It creates the variable if not already there
+and sets it to specified value.
+
+Short Form: There isn't any short form for this
+instruction. But you can also use DIM or VAR keyword instead of SET.
+
+Parameters: Variable Name: Name of the variable to
+create and or set value.
+Variable Value: Value with which variable is
+to be set. You can also specified ++,-- etc operators.
+
+Value constraints: None of the parameters can have spaces in
+them.
+
+Remarks: A variable is entity which may contain some
+value that you can read anytime or if you want you can set it's value to
+something else. SET statement creates a variable if it didn't existed. Note
+that you must use SET first if you want to use variable.
+
+Examples: 1. 
+SET:NoteVal,52
+NOTE:NoteVal
+
+SET:NoteVal,++ 'Increment
+by one
+NOTE:NoteVal 'Play this
+note
+
+2.
+SET:Count,28
+LABEL:TheLoop
+INSTRUMENT:Count
+c# a a b a#
+MATH:Count,++
+IF:Count,<,128,TheLoop
+
+
+See Also: IF, JUMP
+
+
+16. Command Name: MATH:<Variable Name>,<Operation>,[Parameters
+for operation]
+
+What it does: Does the mathematical operation on the
+variable value
+
+Short Form: M
+
+Parameters: Variable Name: Name of the variable to which
+value will be used in operation
+Operation: Mathematical operation
+++: Increment variable's value
+--: Decrement variable's value
++=: Add the value specified in 3rd
+parameter to the variable
+-=: Subtract the value specified in
+3rd parameter to the variable
+*=: Multiply the value specified in
+3rd parameter to the variable
+/=: Devide the variable's value by
+the value specified in 3rd parameter
+^=: Raise the variable's value by
+the value specified in 3rd parameter
+Parameters for operation: Additional
+parameter that is required for some of the above operations
+Value constraints: No overflow, parameter existance is checked
+currently.
+
+Remarks: This instruction is very basic one which
+allows you to some arithmatic with variables value. It doesn't support
+expressions like (2*3/4) etc.
+
+Examples: 1.
+SET:Count,28
+LABEL:TheLoop
+INSTRUMENT:Count
+c# a a b a#
+MATH:Count,++
+IF:Count,<,128,TheLoop
+
+
+See Also: SET, IF, JUMP
+
+
+17. Command Name: RANDOM:<Variable name>,[Upper Limit]
+
+What it does: Set the specified variable with the random
+integer. 
+
+Short Form: No short form of this instruction is
+available.
+
+Parameters: Variable Name: Name of the variable in which
+random number will be stored.
+Upper Limit: Upper limit of the generated
+number (including this number). Default is 100.
+
+Value constraints: Variable Name can not contain spaces.
+
+Remarks: This instruction is useful you want to play
+random tunes or set random octave etc.
+
+Examples: 1.
+SET:NoteNum
+LABEL:TheLoop
+RANDON:NoteNum,88
+NOTE:NoteNum,3,0
+IF:Count,<,88,TheLoop
+
+See Also: SET, IF, JUMP
+
+
+18. Command Name: PLAY:<Tune Name>,[Jump Label in Tune]
+
+What it does: Starts playing another tune simultaneously.
+
+Short Form: P
+
+Parameters: Tune Name: Tune that needs to be started
+simultaneously.
+Jump Label: From where inside the specified
+tune execution should start. If no labels specified then execution starts at
+1st instruction.
+
+Value constraints: Specified tune name and label must exist.
+
+Remarks: This is very significant instruction which
+allows you to run another tune simulatneouly from any other tune.
+
+Examples: 1. Write in Tune1 following:
+NOTE_INTERVAL:5
+a b a a# b 
+PLAY:Tune2
+a a# c c# d a a a# c d d#
+
+1. Write in Tune2 following:
+INSTRUMENT:Sitar
+a b a a# b a a# c c# d a a a# c d d#
+
+See Also: STOP, PAUSE, EXIT
+
+
+19. Command Name: STOP:[Tune Name]
+
+What it does: Stops playing another tune or itself.
+
+Short Form: No short form available for this
+instruction.
+
+Parameters: Tune Name: Tune that needs to be stopped
+running. If no Tune Name specified then currently running tune is stoped
+(which is same as EXIT)
+
+Value constraints: Specified tune name must exist.
+
+Remarks: This instruction allows you stop other
+running tunes or itself.
+
+Examples: 1. Write in Tune1 following:
+NOTE_INTERVAL:5
+a b a a# b 
+PLAY:Tune2
+a a# c 
+STOP:Tune2 'Tune2 execution
+terminated
+c# d a a a# 
+STOP 'Execution is stoped
+here
+c d d# 
+
+1. Write in Tune2 following:
+NOTE_INTERVAL:5
+INSTRUMENT:Sitar
+a b a a# b a a# c c# d a a a# c d d#
+
+See Also: PLAY, PAUSE, EXIT
+
+
+20. Command Name: PAUSE:[Tune Name]
+
+What it does: Pauses another running tune or itself.
+
+Short Form: No short form available for this
+instruction.
+
+Parameters: Tune Name: Tune that needs to be paused. If
+no Tune Name specified then currently running tune is paused.
+
+Value constraints: Specified tune name must exist.
+
+Remarks: This instruction allows you pause other
+running tunes or itself. You can continue running other tunes by issuing
+PLAY instruction. But if a tune pauses itself it can not restart itself!
+
+Examples: 1. Write in Tune1 following:
+NOTE_INTERVAL:5
+a b a a# b 
+PLAY:Tune2
+a a# c 
+PAUSE:Tune2 'Tune2 execution
+paused
+c# d a a a# 
+PLAY:Tune2 'Tune2 execution
+resumed
+c d d# 
+
+1. Write in Tune2 following:
+NOTE_INTERVAL:5
+INSTRUMENT:Sitar
+a b a a# b a a# c c# d a a a# c d d#
+
+See Also: PLAY, STOP, EXIT
+
+
+20. Command Name: RELEASE
+
+What it does: Releases MIDI channel. The MIDI Engine takes
+care of releasing channels so you would almost never will require to use
+this instruction.
+
+Short Form: No short form available for this
+instruction.
+
+Parameters: No parameters required.
+
+Value constraints: NA.
+
+Remarks: The MIDI device has only 16 channels in
+which you can play music. If you are try to run more then 16 tunes
+simultaneously you will get "Out of channels" error (you can create more
+then 16 tunes but only 16 of them should be actively running at any time).
+The RELEASE instruction allows you to release the MIDI channel if you are
+not using it and hence there by use can run more tunes simultaneously. MIDI
+Engine encorporates smart channel pooling and auto matic channel release
+during long silence periods so you should be almost never bother about using
+this instruction. Also note that there is no instruction for aquiring
+channels. Channel allocation is done completely automatic depending on which
+channel is free.
+
+Examples: 1. Write in Tune1 following:
+'Say you are not playing any note
+here
+'but only doing some arithmatic etc
+'so release the channel so that
+others may use it.
+RELEASE
+---long processing---
+a a# 'When you play notes next
+time, channel is automatically allocated
+
+See Also: 
+
+
+21. Command Name: EXIT
+
+What it does: Stops the execution of the current script
+
+Short Form: No short form available for this
+instruction.
+
+Parameters: No parameters required.
+
+Value constraints: NA.
+
+Remarks: This instruction is same as STOP without any
+parameters.
+
+Examples: 1.
+a b c
+a# b c#
+EXIT
+'This won't get played
+e f e#
+
+See Also: STOP, PAUSE, RELEASE, PLAY
+
+
+22. Command Name: NOP
+
+What it does: No-OPeration. Does nothing!
+
+Short Form: No short form available for this
+instruction.
+
+Parameters: No parameters required.
+
+Value constraints: NA.
+
+Remarks: This instruction odes not do anything.
+InstructionProcessor simply ignores this instruction (i.e. does nothing) and
+executes next one. This instruction can be used as place holder. 
+
+Examples: 1.
+a b c
+a# b c#
+NOP 'Juts pace filler. In future you can
+replace NOP with something else.
+e f e#
+
+See Also: STOP, PAUSE, RELEASE, PLAY
+
+
+
+
+Samples
+
+File format
+The scripts written for all tunes are stored in single .MSC file (MSC for
+MScript). It's text file and you can edit it with any text editor. 
+Following is the sample .MSC file when opened in Notepad.
+
+----
+
+
+Following is the general lay out of file. The fields inside <> are
+compulsary.
+
+MScript:[Param1],[Param2] VER:<CompatibleVer1>,[CompatibleVer2],...
+TIMER:<Timer_Val>
+
+
+START_TUNE:<TuneName1>,[Param1],[Param2]
+
+--MScript commands
+
+END_TUNE:<TuneName1>
+
+
+
+START_TUNE:<TuneName2>,[Param1],[Param2]
+
+--MScript commands
+
+END_TUNE:<TuneName2>
+
+------------
+--More tunes
+------------
+
+
+The first filed, i.e. MScript:[Param1],[Param2] is the signature. Currently
+no parameters are used so it's just MScript. This signature helps to
+identifie whether user is trying to open valid MScript file or something
+else that might have been renamed to .MSC or whether file was currupted.
+
+The 2nd field, i.e. VER:... indicates to which versions the MScript in the
+file is compatible to. For example, if there is new version of MScript in
+future (say 2.0) which is also partially backward compatible to 1.0 and that
+scripts in file .MSC does not uses any 2.0 only features then VER field
+could be,
+VER:2.0,1.0
+
+Now say their is entirely different flavor of MScript with it's own version
+numbers, then it can mark MSC file with:
+VER:NewKind1.0
+
+When you open such MSC file in Visual Music it will show you message that
+scipt in the MSC file is not compatible with what it understands. However
+now say NewKind type of MScript is also compatible with MScript used by
+Visual Music, it can mark version as...
+VER:NewKind1.0,VMusic1.0
+
+Or as..
+
+VER:NewKind1.0,1.0
+
+In short, if Visual Music finds 1.0 or VMusic1.0 in the compatible version
+list, it will open it happily or otherwise it will give out an error.
+
+
+Next, the TIMER:<Timer_Val> is used to specifie the interval used. For
+example when you say a#:2 it means play the note a# for 2 intervals. Each
+interval is by default 60ms. So the TIMER field looks like this,
+TIMER:60
+
+If in future true multithreading is employed then it would be possible to
+decrease this timer value and play a note for even more short period.
+
+Next, script for each tune is enclosed between two markers START_TUNE and
+END_TUNE. START_TUNE can also take parameters but none is used currently.
+
+
+Developers reference
+
+Extending Visual Music
+
+There are various ways to extend/use Visual Music:
+1. Visual Music is architectured around varios ActiveX objects. Infact,
+almost all the functionality of Visual Music is in these objects and Visual
+Music itself is merely as "front-end" to provide access to these objects.
+You can build your own front-ends for these objects or may be replace the
+components with you
+
+Visual Music Object Model
+MIDI Programming guide
+Visual Music DDE commands
+Visual Music command line refernce
+
+
+TODO:
+1. Add fb midi eng.
+2. Add Random command.
+3. Alias silnence as WAIT_FOR
+4. Reset tempo value on exec.
+5. Alias SET with DIM and VAR. Make var value optional
+
+Write code
+Impl VM todo
+rename files
+start with each file & finish
+create sample and about
+
+Regards,
+Shital.
+
+________________________________________________________________________________
+Marlborough Stirling plc, Allen Jones House, Jessop Avenue, Cheltenham, Gloucestershire, GL50 3SH
+Tel: 01242 547000     Fax: 01242 547100    http://www.marlborough-stirling.com
+
+MARLBOROUGH STIRLING
+The only company created specifically to provide a complete range of technology based business solutions to the financial services industry
+
+CONFIDENTIALITY NOTICE
+This communication and the information it contains is intended for the person or organisation to whom it is addressed. Its contents are confidential and may be protected in law. Unauthorised use, copying or disclosure of any of it may be unlawful. If you are not the intended recipient, please contact us immediately.

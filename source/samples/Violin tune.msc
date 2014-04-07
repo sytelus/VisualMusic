@@ -1,0 +1,17 @@
+MScript VER:1
+TIMER:60
+
+TuneStart:Main
+--Not much better. But I always thought I can play violin. Atleast now I'm!
+
+INSTRUMENT:Violin 
+
+OCTAVE:5
+NOTE_INTERVAL:4 
+SILENCE_INTERVAL:2 
+
+LABEL:TOP
+	SILENCE:5
+	c c:3 a d c c#:4
+JUMP:TOP
+TuneEnd:Main

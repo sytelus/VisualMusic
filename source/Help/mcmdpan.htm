@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML dir=ltr>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+<title>SaveSetting Statement</title>
+<style>@import url(vmusic.css);</style>
+<BODY>
+
+<h1><a name="vastmsavesetting"></a><B><B>PAN </B> </B> Statement</h1>
+<p>
+      Sets the difference of amount of loudness with which 
+higher notes and lower notes are played. See <A 
+href="whatisnoteoctaveandblablabla.htm">What is Note, Octave and bla bla 
+bla</A>
+       
+          
+        </p>
+<p class=label>
+<b>Syntax</b></p>
+<p>
+<b>PAN:<EM>&lt;Pan 
+value&gt;</EM>   
+</b></p>
+<p>
+The <STRONG><B><B>PAN </B> 
+</B> </STRONG>statement syntax 
+has these arguments</p>
+<table border=1 cellpadding=5 cols=2 frame=below rules=rows>
+<tr valign=top>
+<td class=label width="14%"><b>Part</b></td>
+<td class=label width="86%"><b>Description</b></td>
+</tr>
+<tr valign=top>
+<td width="14%"><b><i>     Pan value</i></b></td>
+<td width="86%">         
+       
+         Pan value</td>
+</tr>
+</table><br>
+<p class=label><STRONG>Short Form</STRONG></p>
+<P class=label>None</P>
+<P class=label><STRONG>Remarks</STRONG></P>
+<P>                           Default value is 64 which 
+means all notes are played at equal volume.<BR><STRONG></STRONG></P>
+<P><STRONG>Examples</STRONG></P>
+1. Play notes in seperate pans
+<br><br><CODE><table><tr><td>
+PAN:22<BR>O:2 a#<BR>O:6 a# <BR>
+PAN:100<BR>O:2 a#<BR>O:6 a#
+</td></tr></table></CODE><br>
+2. Play notes in decreasing pan
+<br><br><CODE><table><tr><td>
+SET:Count,87<BR>PAN:20<BR>LABEL:TheLoop<BR>NOTE:Count<BR>MATH:Count,--<BR>IF:Count,&gt;,0,TheLoop
+</td></tr></table></CODE><br>
+
+<h2>See Also</h2>OCTAVE, VOLUME, SET, a, a#, b, c, 
+c#,...<BR>       
+<BR>         
+    
+  
+</BODY>
+</HTML>

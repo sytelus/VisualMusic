@@ -1,0 +1,25 @@
+MScript VER:1
+TIMER:60
+
+TuneStart:Main
+--Play same notes on different instruments. 
+--Good music for some detective kind of serial (;-)
+
+'Execute this loop 5 times
+SET:LoopCount,5
+
+LABEL:TOP
+
+SET:InstrumentNum,55
+LABEL:InstrumentLoop
+
+INSTRUMENT:InstrumentNum
+a b c d 
+
+MATH:InstrumentNum,--
+IF:InstrumentNum,>,35,InstrumentLoop
+
+MATH:LoopCount,--
+IF:LoopCount,>,0,TOP
+
+TuneEnd:Main

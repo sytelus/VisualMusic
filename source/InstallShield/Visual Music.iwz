@@ -1,0 +1,240 @@
+
+[InstallShield Wizard]
+iDate=0
+iTime=0
+Flag=f6000000
+ISX.EXE Size=679936
+ISX.EXE Date=11:24:54AM  4/8/1999
+ISX.EXE Ver=2.1.2.62
+SETUP.EXE Size=45312
+SETUP.EXE Date=9:12:24AM  3/23/1999
+SETUP.EXE Ver=3.0.111.0
+SETUP.INS Size=81342
+SETUP.INS Date=11:26:40AM  4/8/1999
+SETUP.INS Ver=Not available
+_INST16.EX_ Size=283522
+_INST16.EX_ Date=9:12:22AM  3/23/1999
+_INST16.EX_ Ver=Not available
+_INST32I.EX_ Size=294079
+_INST32I.EX_ Date=9:12:22AM  3/23/1999
+_INST32I.EX_ Ver=Not available
+ISDEPEND.INI Size=294079
+ISDEPEND.INI Date=9:12:22AM  3/23/1999
+ISDEPEND.INI Ver=Not available
+SWDEPEND.INI Size=294079
+SWDEPEND.INI Date=9:12:22AM  3/23/1999
+SWDEPEND.INI Ver=Not available
+ICOMP.EXE Size=119808
+ICOMP.EXE Date=9:12:24AM  3/23/1999
+ICOMP.EXE Ver=3.00.062
+SPLIT.EXE Size=90624
+SPLIT.EXE Date=9:12:24AM  3/23/1999
+SPLIT.EXE Ver=3.00.060
+PACKLIST.EXE Size=87552
+PACKLIST.EXE Date=9:12:24AM  3/23/1999
+PACKLIST.EXE Ver=3.00.060
+Version=2.12
+DevTool=for Visual Basic 6.0
+Platform=Win32
+DisksBuilt=1
+DisksDir=VISUAL~1\650MB\
+TabsVisit=11111111100000011111
+LangNum=451
+LangDir=LANG\ENG\
+
+[VisualDesign]
+AppName=Visual Music
+AppExe=[Program Files]\Visual Music.exe
+AppExeFile=
+Version=1.1.0
+Company=Sytel
+Title=Visual Music 1.1
+TitleType=1
+BackgrndBmp=C:\Shital\Progs\Visual Music\InstallShield\visualmusic.bmp
+BackgrndAlign=1
+Backgrnd=1
+BackgrndColor=1
+Uninstall=1
+UninstallChecked=1
+Silent=1
+SmsMode=0
+
+[Types]
+Types=1
+Type1Components=1
+Type1Name=Complete
+Type1ComponentList=1 
+
+[Components]
+Components=1
+Component1Groups=3
+Component1Name=Application Files
+Component1Description=Application files needed to run the application
+Component1GroupList=1 2 3 
+
+[Groups]
+Groups=3
+Group1Size=526091
+Group1Files=6
+Group1Name=Program Files
+Group1Dir=<INSTALLDIR>
+Group1Update=0
+Group1TargetOS=-1
+Group1File1=C:\Shital\Progs\Visual Music\Visual Music.exe
+Group1File2=C:\Shital\Progs\Visual Music\Visual Music.chm
+Group1File3=C:\Shital\Progs\Visual Music\readme.txt
+Group1File4=C:\Shital\Progs\Visual Music\Instruments.ini
+Group1File5=C:\Shital\Progs\Visual Music\VisualMusic.ico
+Group1File6=C:\Shital\Progs\Visual Music\favorites.ini
+Group2Size=5099
+Group2Files=13
+Group2Name=samples
+Group2Dir=<INSTALLDIR>\samples
+Group2Update=0
+Group2TargetOS=-1
+Group2File1=C:\Shital\Progs\Visual Music\samples\!!How to play.msc
+Group2File2=C:\Shital\Progs\Visual Music\samples\At all cost.msc
+Group2File3=C:\Shital\Progs\Visual Music\samples\Fad out effect.msc
+Group2File4=C:\Shital\Progs\Visual Music\samples\Multiple Instruments1.msc
+Group2File5=C:\Shital\Progs\Visual Music\samples\Multiple Instruments2.msc
+Group2File6=C:\Shital\Progs\Visual Music\samples\Note On-Off demo.msc
+Group2File7=C:\Shital\Progs\Visual Music\samples\Play second tune.msc
+Group2File8=C:\Shital\Progs\Visual Music\samples\readme samples.txt
+Group2File9=C:\Shital\Progs\Visual Music\samples\Rock organ.msc
+Group2File10=C:\Shital\Progs\Visual Music\samples\space music.msc
+Group2File11=C:\Shital\Progs\Visual Music\samples\Violin tune.msc
+Group2File12=C:\Shital\Progs\Visual Music\samples\Whistle recording.msc
+Group2File13=C:\Shital\Progs\Visual Music\samples\Horror.msc
+Group3Size=3940200
+Group3Files=10
+Group3Auto=2
+Group3ID=38802
+Group3Name=System Files - WinSysDir
+Group3Dir=<WINSYSDIR>
+Group3Update=-1
+Group3TargetOS=-1
+Group3File1=C:\WINDOWS\SYSTEM\MSVBVM60.DLL
+Group3File1Auto=2
+Group3File1Reg=1
+Group3File2=C:\WINDOWS\SYSTEM\STDOLE2.TLB
+Group3File2Auto=2
+Group3File2Reg=1
+Group3File3=C:\WINDOWS\SYSTEM\OLEAUT32.DLL
+Group3File3Auto=2
+Group3File3Reg=1
+Group3File4=C:\WINDOWS\SYSTEM\OLEPRO32.DLL
+Group3File4Auto=2
+Group3File4Reg=1
+Group3File5=C:\WINDOWS\SYSTEM\ASYCFILT.DLL
+Group3File5Auto=2
+Group3File6=C:\WINDOWS\SYSTEM\RICHTX32.OCX
+Group3File6Auto=219
+Group3File6Reg=1
+Group3File7=C:\PROGRAM FILES\INSTALLSHIELD\INSTALLSHIELD EXPRESS 2.12\redist\RICHED32.DLL
+Group3File7Auto=219
+Group3File8=C:\WINDOWS\SYSTEM\COMDLG32.OCX
+Group3File8Auto=202
+Group3File8Reg=1
+Group3File9=C:\PROGRAM FILES\INSTALLSHIELD\INSTALLSHIELD EXPRESS 2.12\redist\COMCAT.DLL
+Group3File9Auto=202
+Group3File9Reg=1
+Group3File10=C:\WINDOWS\SYSTEM\MSCOMCTL.OCX
+Group3File10Auto=237
+Group3File10Reg=1
+Group3Reg=1
+
+[Sequence]
+DestinationLocationDir=<ProgramFilesDir>\Visual Music
+DatabaseLocationDir=<INSTALLDIR>\data
+SelectProgramFolderName=Visual Music
+WelcomeMessage=1
+WelcomeMessageFile=
+DestinationLocation=1
+BeginFileTransfer=1
+ProgressBar=1
+SetupComplete=1
+SetupCompleteExec=[Program Files]\Visual Music.exe
+SetupCompleteExecParam=
+SetupCompleteExecReadme=[Program Files]\Visual Music.chm
+
+[RegEntries]
+Reg1Path=HKEY_CLASSES_ROOT
+Reg1Val1Type=0
+Reg1Val1Name=(Default)
+Reg1Val1Data=(value not set)
+Reg1Vals=1
+Reg2Path=HKEY_CURRENT_USER
+Reg2Val1Type=0
+Reg2Val1Name=(Default)
+Reg2Val1Data=(value not set)
+Reg2Vals=1
+Reg3Path=HKEY_LOCAL_MACHINE
+Reg3Val1Type=0
+Reg3Val1Name=(Default)
+Reg3Val1Data=(value not set)
+Reg3Vals=1
+Reg4Path=HKEY_USERS
+Reg4Val1Type=0
+Reg4Val1Name=(Default)
+Reg4Val1Data=(value not set)
+Reg4Vals=1
+Reg5Path=HKEY_CURRENT_CONFIG
+Reg5Val1Type=0
+Reg5Val1Name=(Default)
+Reg5Val1Data=(value not set)
+Reg5Vals=1
+Reg6Path=HKEY_DYN_DATA
+Reg6Val1Type=0
+Reg6Val1Name=(Default)
+Reg6Val1Data=(value not set)
+Reg6Vals=1
+Regs=6
+
+[Registry]
+
+[Icons]
+Icons=2
+Icon1Param=
+Icon1Cmd=[Program Files]\Visual Music.exe
+Icon1Description=Visual Music
+Icon1WorkingDir=<INSTALLDIR>
+Icon1IconFile=
+Icon1RealFile=C:\Shital\Progs\Visual Music\Visual Music.exe
+Icon1WhichIcon=0
+Icon1KeyVirtual=0
+Icon1KeyFlags=0
+Icon1StartMenu=0
+Icon1Window=0
+Icon2Param=
+Icon2Cmd=[Program Files]\Visual Music.chm
+Icon2Description=Visual Music Help
+Icon2WorkingDir=<INSTALLDIR>
+Icon2IconFile=
+Icon2RealFile=C:\Shital\Progs\Visual Music\Visual Music.chm
+Icon2WhichIcon=0
+Icon2KeyVirtual=0
+Icon2KeyFlags=0
+Icon2StartMenu=0
+Icon2Window=1
+
+[VisualBasic]
+PRJFile=C:\Shital\Progs\Visual Music\Visual Music.vbp
+
+[Autoexec]
+PathDir=
+ShareLocks=
+ShareFiles=
+Command=
+
+[CopyToFloppy]
+DriveOption=Path for a 1 File Installation.
+DestinationPath=
+DestinationPathOneFile=c:\Shital\Progs\Visual Music\InstallShield\VISUAL~1\650MB\
+Password=
+
+[ISObjectIDs]
+nTotal=1
+ID1=237
+
+[Uninstall]
+UserUninstall=0

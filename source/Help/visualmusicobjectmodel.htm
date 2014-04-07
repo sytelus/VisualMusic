@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+<title>Visual Music Object Model - Visual Music</title>
+<style>@import url(vmusic.css);</style>
+</HEAD>
+<BODY>
+
+<H1>Visual Music Object Model</H1>
+<p>
+    Visual Music takes full advantage of component-based architecture. Visual Music screen&nbsp;is just an 
+user interface for several behind-the-curtain ActiveX objects. Almost all the functionality&nbsp;is packed in these ActiveX objects. You too take make your own 
+user interfaces for these ActiveX objects. You can also script these objects using various scripting languages available. However note that in this beta
+version these objects are not currently exposed in separate DLL but is compiled in to same EXE. This is, for the time being, for preventing version conflicts in the final version. However this objects 
+are written in a way that they&nbsp;can be taken out of EXE and compiled in to separate DLLs at any time.
+<br><br>
+Following is the short descriptions of the various objects available: <BR>
+<UL>
+<li><b>ClockProvider</b>: This is simply the wrapper for the clocking device needed for InstructionProcessor. 
+When I started writing Visual Music, I first used VB's Timer control itself. But later I upgraded it to Marbey's precision timer control. In future there could be something else. So it was evident that code can't be changed every time when timing control changes. The ClockProvider class shields against such changes.
+<li><b>InstructionProcessor</b>: This is the hart of Visual Music. It's basically the "CPU" or "Virtual Machine" for the MScript instructions. It takes compiled binary instructions and executes them.
+<li><b>Instructions</b>: The Instructions object holds compiled instructions. You specify which Instructions object you want to use with InstructionProcessor. The Instructions object is created by MScriptCompiler.
+<li><b>InstrumentManager</b>: This object manages list of available instruments. It loads instrument names and numbers from INI file. It also creates INI file of the favourite instruments.
+<li><b>MIDIEngine</b>: This is the lowest level class that actually plays, stops and does all other things like changing instrument, octaves, volume etc by calling MIDI API. It also implements MIDI channel pooling.
+<li><b>MScript</b>: This object manages the script written for one tune and it's compiled version. It automatically compiles the script when it is changed and a request to play it is made.
+<li><b>MScriptCompiler</b>: This object compiled the script and gives Instructions object containing binary version of script.
+<li><b>MScriptRecorder</b>: This object captures several events that are generated when a note is played or stopped. Using this events it creates the MScript commands that will reproduce the played note. MScript recorder currently does not support multi key press.
+<li><b>MScripts</b>: This object 
+  manages the set of MScript objects. It also provides methods to create the 
+  text that could be saved in a file and later on load it from the file.</li></UL>
+<P>&nbsp;</P>
+
+</BODY>
+</HTML>

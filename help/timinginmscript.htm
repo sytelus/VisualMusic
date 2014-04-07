@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+<title>Timing In MScript - Visual Music</title>
+<style>@import url(vmusic.css);</style>
+</HEAD>
+<BODY>
+
+<H1>Timing In MScript</H1>
+<p>
+
+<h2>For musical instruction:</h2>The time interval 
+specifies how long a note will be played. MScript commands allows you to play 
+any notes for the time interval as specified by you. However for simplicity, 
+time interval is not specified in the units of mill seconds or seconds but in 
+terms of a special unit called MScript Time Interval. Each MScript time interval 
+is 60ms long. So if you say "Play the note c# for interval =   5" it 
+means "Play the note c# for 300ms". The default time interval for a note is&nbsp;1 (i.e.60ms). 
+So, the command c# will play the note "c#" for 60ms by default. But the command 
+c#:6 will play the note note "c#" for 6*60=360ms. You can change this default 
+time interval by NOTE_INTERVAL command. For example, 
+<br><br><CODE><table><tr><td>
+	  
+  
+	  
+ C#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Play the note C# for interval=1 (default) <br>
+ 
+      
+
+ 
+      
+NOTE_INTERVAL:7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ 
+      
+'Change the standard note interval <br>
+ 
+      
+C#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Play the note C# for interval=7 (new default) <br>
+ 
+      
+C#:10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ 
+      
+'Play the note C# for interval=10 (override the default)
+</td></tr></table></CODE><br>
+<h2>For Non-Musical Instruction:</h2>The none musical 
+instructions (i.e. instructions that does not play any musical notes or silence) 
+like JUMP, MATH, IF etc essentially do not take any time to execute. 
+This means that non-musical instruction doesn't<BR>  
+  introduces any significant delay. For example, To execute following 
+4 instructions 4 clock cycles would be required because each note is played for 1 
+clock (default interval):
+<br><br><CODE><table><tr><td>
+a b c d
+</td></tr></table></CODE><br>
+To execute following 1 instruction, again 4 clock cycles would be required 
+because note is specified to run for 4 cycles:
+<br><br><CODE><table><tr><td>
+a:4
+</td></tr></table></CODE><br>
+However to execute following 4 instructions it will still require only 4 
+cycles because non-musical instructions are executed one after another 
+irrespective of clock cycle:
+<br><br><CODE><table><tr><td>
+a:4 <BR>
+IF:Var1,&lt;&gt;,5,SomeWhere&nbsp;'Non musical instruction <BR>
+SET:Var1,5&nbsp;&nbsp;'Non musical instruction <BR>
+MATH:Var1,++&nbsp;&nbsp;'Non musical instruction 
+</td></tr></table></CODE><br>
+</BODY>
+</HTML>

@@ -1,0 +1,24 @@
+MScript VER:1
+TIMER:60
+
+TuneStart:Tune1
+--This is the demo of how one tune can start another in parallel!
+--Press Play button to here!
+
+INSTRUMENT:Music_Box 
+	LABEL:TOP
+	a b c d 
+	
+	--Start another tune in parallel
+	PLAY:Tune2 
+
+	e e a a# b a
+JUMP:TOP
+TuneEnd:Tune1
+TuneStart:Tune2
+INSTRUMENT:FX_7_(echoes) 
+a:5 
+b:3 
+d# 
+d
+TuneEnd:Tune2

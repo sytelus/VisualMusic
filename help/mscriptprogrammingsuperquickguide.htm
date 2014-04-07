@@ -1,0 +1,124 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+<title>- Visual Music</title>
+<style>@import url(vmusic.css);</style>
+</HEAD>
+<BODY>
+
+<H1>MScript Programming Super Quick Guide</H1>
+<p>
+If you know slightest programming, this few steps will teach you MScript by
+examples in minutes.
+<br>
+Try out each of the following scripts and see what you hear and then read
+the explanation here!
+<br>
+<ol type="1">
+	<li>
+Write the following script and run it.
+<br><br>
+<CODE><table><tr><td>
+	a b c
+</td></tr></table></CODE>
+   <B><BR>Explanation:</B> Each musical note 
+  is a command. Thus this&nbsp;script plays 3 musical notes a, b and c. Musical 
+  notes available are a, a#, b, c, c#, d, d#, e,e#, f, g, g#. To know what is a 
+  musical note see the topic <A href="whatisnoteoctaveandblablabla.htm">What is 
+  Note, Octave and bla, bla bla</A>           
+        
+
+	<li>
+Write the following script and run it.
+<br><br>
+<CODE><table><tr><td>
+INSTRUMENT:Sitar<BR>a b c
+</td></tr></table></CODE><br>
+   <b>Explanation:</b> The keyword INSTRUMENT sets the 
+  instrument you want to play. Note that instrument could be specified by number 
+  or name and there is no space around ":". <BR>          
+	<li>
+Write the following script and run it.&nbsp;
+<br><br>
+<CODE><table><tr><td>
+LABEL:Top<BR>&nbsp;&nbsp; a b c<BR>JUMP:Top<br>
+</td></tr></table></CODE>
+   <b><BR>Explanation:</b> The LABEL command marks a position in the 
+  script where you jump later. The JUMP command tells where to jump in the script. So the notes 
+  a b c will be played again and again. To stop it press Stop button or 
+  click Tune &gt; Stop Play/Recording menu.<BR>           
+	<li>
+Write the following script and run it.
+<br><br>	
+<CODE><table><tr><td>
+LABEL:Top<BR>&nbsp;&nbsp; a b 
+  c:7,5<BR>
+JUMP:Top
+</td></tr></table></CODE>
+   <b><BR>Explanation:</b>    This one is similar 
+  to above except that the Note c has additional parameters. The first 
+  parameter specifies for how&nbsp;long Note c should be played. The second parameter specifies for 
+  how&nbsp;long to pause before going to next command, i.e., after playing a note how 
+  much time to keep silence. You can also use SILENCE command for this. For 
+  example above is same as this one: <BR><BR><CODE>
+  <TABLE>
+    
+    <TR>
+      <TD>
+        <P>LABEL:Top<BR>&nbsp; a b c:7 
+  SILENCE:5<BR>JUMP:Top</P></TD></TR></TABLE></CODE><BR>See <A href="timinginmscript.htm">Timing in MScript<FONT 
+  color=#000000></FONT></A> for more info.
+               
+           
+  <LI>
+Write the following script and run it.
+<br><br>
+<CODE><table><tr><td>
+        <P>&nbsp;SET:Count,3</P>
+        <P>&nbsp;LABEL:TOP</P>
+        <P>&nbsp;&nbsp; a b c</P>
+        <P>&nbsp;&nbsp; MATH:Count,--</P>
+        <P>IF:Count,&gt;,0,TOP,BELOW</P>
+        <P>&nbsp;</P>
+        <P>LABEL:BELOW</P>
+        <P>&nbsp;&nbsp; d e f</P>
+        <P>JUMP:TOP&nbsp; </P> 
+</td></tr></table></CODE>
+   <b><BR>Explanation:</b> The SET command sets the value in the 
+  variable. MATH command<BR>does some mathematical operation on the variable 
+  (here "--" means decrement<BR>by 1). Lastly the IF command checks if variable 
+  is set to particular value<BR>and jumps to specified location accordingly.<BR>
+  <LI>
+Write the following script in Tune1.
+<br><br>
+<CODE><table>
+    <tr><td>
+        <P>I:Bright_Acoustic_Piano<BR>
+SET:Count,3<BR>LABEL:TOP<BR>&nbsp; a b 
+        c<BR>&nbsp; MATH:Count,--<BR>&nbsp; 
+        IF:Count,&gt;,0,TOP,BELOW<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        LABEL:BELOW<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d 
+        e f<BR>&nbsp; JUMP:TOP&nbsp;</P></td></tr></table></CODE><br>
+Write the following script in Tune2.
+<br><br>	
+<CODE><table><tr><td><P>INSTRUMENT:Timpani
+        <BR>
+SET:Count,3<BR>LABEL:TOP<BR>&nbsp; a b 
+        c<BR>&nbsp; MATH:Count,--<BR>&nbsp; 
+        IF:Count,&gt;,0,TOP,BELOW<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        LABEL:BELOW<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d 
+        e f<BR>&nbsp; JUMP:TOP&nbsp; 
+  </P> 
+</td></tr></table></CODE><br>	
+Press Play All Tunes button. You will hear multiple 
+  instruments being played simultaneously. You can also play tunes 
+  individually.<br>
+	<li>
+<b>Managing tunes.</b> You can 
+  rename the existing tune, add new tune or delete the one. See<A 
+  href="usingmscripteditor.htm">Using MScript Editor</A>    
+          for more information</li>   </ol>
+
+</BODY>
+</HTML>

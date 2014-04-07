@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+<title>Note By Name - MScript Commands - Visual Music</title>
+<style>@import url(vmusic.css);</style>
+</HEAD>
+<BODY>
+
+<H1>Note By Name</H1>
+<STRONG>Command Name:</STRONG> &lt;Note_Name&gt;:[Note Interval],[Silence 
+interval],[octave], volume]<BR>where Note_Name is any of this: a, a#, b, c, c#, 
+d ,d#, e,e#, f, g#
+<br><br>
+<STRONG>What it does:</STRONG> Plays the specified note.
+<br><br>
+<STRONG>Short Form:</STRONG>        None.
+<br><br>
+<STRONG>Parameters:</STRONG>
+<BR>
+<EM>Note Interval:</EM> How long the note should be plaid. If note specified 
+standard note interval is used (default is ).
+<BR>
+<EM>Silence Interval:</EM>  How long to 
+keep silence after playing the note. If note specified standard silence interval 
+is used (default is 4).
+<BR>
+<EM>Octave:</EM> In which octave to play the note. Also 
+supports ++ etc operators. If note specified currently set octave is 
+used.
+<BR>
+<EM>Volume: </EM> Volume with which the note should be played. Also supports ++ 
+etc operators. If note specified currently set volume is used.
+<BR><BR>
+<STRONG>Value constraints:</STRONG> 
+<br>
+<EM>Note Interval: </EM>   If 0, Note is played for 
+shortest interval limited only by CPU speed<BR><EM>Silence Interval: </EM>  If 0, no 
+silence is inserted, i.e., if second note is there it will be played 
+immediately.<BR><EM>Octave: </EM> 0 - 7. <BR><EM>Volume: </EM>0-100. No error check in range. 
+<br><br>
+<STRONG>Remarks: </STRONG>
+<br><br><br>
+<STRONG>Examples: </STRONG>
+<br>
+1. Play notes by name
+<br><br><CODE><table><tr><td>
+'Play notes<BR>a b c c# d a 
+    
+</td></tr></table></CODE><br>
+2. Specify the interval
+<br><br><CODE><table><tr><td>
+'Play the note a# for the interval =5 (each interval is of 
+60ms)<BR>a#:5
+</td></tr></table></CODE><br>
+2. Specify interval for silence
+<br><br><CODE><table><tr><td>
+'Play the note c for the interval =5 followed by 
+silence for interval of 2 followed by note c# with default interval<BR>c:5,2 c#
+</td></tr></table></CODE><br>
+3. Specify octave
+<br><br><CODE><table><tr><td>
+'Play the note c# in the octave=default octave + 3 
+with volume=50 interval = 5 followed by silence for interval of 2 <BR>c#:5,2,++3,50
+</td></tr></table></CODE><br>
+<br>
+<STRONG>See Also:</STRONG>  NOTE, NON, NOFF<BR>
+
+</BODY>
+</HTML>

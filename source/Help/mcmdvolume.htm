@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML dir=ltr>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+<title>Volume Statement</title>
+<style>@import url(vmusic.css);</style>
+<BODY>
+
+<h1><a name="vastmsavesetting"></a>VOLUME&nbsp;Statement</h1>
+<p>
+      What it
+      does: Sets the amount 
+of loudness with which next notes would be played</p>
+<p class=label>
+<b>Syntax</b></p>
+<p>
+<b>VOLUME:<EM>&lt;Volume 
+number&gt;</EM></b></p>
+<p>
+The&nbsp;&nbsp; <b><B><B>VOLUME</B></B> </b>statement syntax 
+has these arguments</p>
+<table border=1 cellpadding=5 cols=2 frame=below rules=rows>
+<tr valign=top>
+<td class=label width="14%"><b>Part</b></td>
+<td class=label width="86%"><b>Description</b></td>
+</tr>
+<tr valign=top>
+<td width="14%"><b><i>  Volume number</i></b></td>
+<td width="86%">    Volume number: 0-100. Higher values 
+      could 
+      be specified but not recommended.</td>
+</tr>
+</table><br>
+<p class=label><STRONG>Short Form</STRONG></p>
+<P class=label>V</P>
+<P class=label><STRONG>Remarks</STRONG></P>
+<P>   Default value is 100 (i.e. full). You can specify values as high 
+as 255 but it produces some unpredictable effects.<BR><B></B></P>
+<P><STRONG>Examples</STRONG></P>
+1. Play with full volume
+<br><br><CODE><table><tr><td>
+VOLUME:100<BR>a b c
+</td></tr></table></CODE><br>
+
+2. Play with half volume
+<br><br><CODE><table><tr><td>
+VOLUME:50<BR>a b c
+</td></tr></table></CODE><br>
+
+3. Play with decreasing volume
+<br><br><CODE><table><tr><td>
+SET:Count,100<BR>LABEL:TheLoop<BR>VOLUME:Count<BR>c# a a<BR>MATH:Count,--<BR>IF:Count,&gt;,0,TheLoop
+</td></tr></table></CODE><br>
+
+<P><B>See Also</B></P>OCTAVE, VOLUME, 
+SET, a, a#, b, c, c#,...<BR>  
+    
+  
+</BODY>
+</HTML>

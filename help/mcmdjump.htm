@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+<title>JUMP - MScript Commands - Visual Music</title>
+<style>@import url(vmusic.css);</style>
+</HEAD>
+<BODY>
+
+<H1>  JUMP</H1>
+<br>
+<h2>Command Format:</h2> <EM>  
+JUMP:&lt;Label name&gt;</EM>
+<h2>What it does:</h2>Jumps to the immediate next location where the specified 
+label is there.
+<h2>Short Form:</h2>        &nbsp;&nbsp;J
+<br><br>
+<h2>Parameters:</h2><STRONG><EM>Label name: 
+</EM></STRONG>Name           
+   of label where you want to jump
+<BR><BR>
+<h2>Value constraints:</h2><STRONG><EM>Label name: 
+</EM></STRONG>Can not contain space. Label must exist or you will get run time 
+error.
+<h2>Remarks: </h2>        
+    Use JUMP instruction to repeat particular commands again and 
+again.
+<h2>Examples:</h2>
+Examples: 
+1. Play the note c# again and again
+<br><br><CODE><table><tr><td>
+LABEL:DoItAgain<BR>c#<BR>JUMP:DoItAgain
+</td></tr></table></CODE><br>
+
+<BR>
+<h2>See Also:</h2> LABEL, IF
+
+</BODY>
+</HTML>

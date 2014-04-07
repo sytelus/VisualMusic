@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML dir=ltr>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+<title>SILENCE_INTERVAL Statement</title>
+<style>@import url(vmusic.css);</style>
+<BODY>
+
+<h1><a name="vastmsavesetting"></a><B><B><B><STRONG><B><B><B><B><STRONG><B><B><B>SILENCE_INTERVAL 
+</B></B></B></STRONG></B> 
+</B></B></B></STRONG> 
+</B> </B> </B> Statement</h1>
+<p>
+      What it does: Sets the note interval value
+      that will
+      be used if no 
+note interval is specified explicitly in the note commands.</p>
+<p class=label>
+<b>Syntax</b></p>
+<p>
+<b><STRONG><B><B><B>SILENCE_INTERVAL:&lt;interval value&gt; 
+</B></B></B></STRONG>   
+</b></p>
+<p>
+The <STRONG><B><B><B><B><STRONG><B><B><B>SILENCE_INTERVAL 
+</B></B></B></STRONG></B> </B> </B> 
+</B> </STRONG>statement syntax 
+has these arguments</p>
+<table border=1 cellpadding=5 cols=2 frame=below rules=rows>
+<tr valign=top>
+<td class=label width="14%"><b>Part</b></td>
+<td class=label width="86%"><b>Description</b></td>
+</tr>
+<tr valign=top>
+<td width="14%"><b><i>     interval value</i></b></td>
+<td width="86%">         
+       
+         One interval is by default equals         
+       
+         to 60ms</td>
+</tr>
+</table><br>
+<p class=label><STRONG>Short Form</STRONG></p>
+<P class=label>SI</P>
+<P class=label><STRONG>Remarks</STRONG></P>
+<P>                           Default value is 1. Silence could be also                           inserted by SILENCE command. The value specified by SILENCE_INTERVAL 
+command is used only if no such value is supplied as the part of instruction to 
+play the note.</P>
+<P><STRONG>Examples</STRONG></P>
+1. Silence interval demo
+<br><br><CODE><table><tr><td>
+c#&nbsp; a# 'Play the note followed by silence for 
+      default interval=4
+      <P></P>
+<P>SILENCE_INTERVAL:8 <BR>c#&nbsp; 
+      a# 'Play the note followed by silence for 
+new default interval=8</P>
+<P>c#:,3 a# 'Play the note followed by silence for interval=3</P>
+</td></tr></table></CODE><br>
+
+<h2>See Also</h2>
+SILENCE_INTERVAL, NOTE, a, a#, b, c, 
+c#,...<BR>         
+    
+  
+</BODY>
+</HTML>

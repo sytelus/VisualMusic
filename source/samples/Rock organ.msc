@@ -1,0 +1,15 @@
+MScript VER:1
+TIMER:60
+
+TuneStart:Main
+--Quite sluggish. But I'm playing Rock Organ for the first time!
+
+INSTRUMENT:Rock_Organ 
+
+NOTE_INTERVAL:1 
+SILENCE_INTERVAL:2
+
+LABEL:TOP
+	c c:3 a d c c#:4
+JUMP:TOP
+TuneEnd:Main

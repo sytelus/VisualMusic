@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML dir=ltr>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+<title>MATH Statement</title>
+<style>@import url(vmusic.css);</style>
+<BODY>
+
+<h1><a name="vastmsavesetting"></a><B><B><B><STRONG><B><B><B><B><STRONG><B><B><B><B><STRONG><B><B><B><B><STRONG><B><B><B>MATH 
+</B></B></B></STRONG></B> 
+</B></B></B></STRONG></B> 
+</B></B></B></STRONG></B> 
+</B></B></B></STRONG> 
+</B> </B> </B> Statement</h1>
+<p>
+ Does the mathematical operation on the variable value</p>
+<p class=label>
+<b>Syntax</b></p>
+<b><STRONG><B><B><B>
+<P>MATH:<EM>&lt;Variable Name&gt;,&lt;Operation&gt;,[Parameters for 
+operation]</EM></P>  
+</B></B></B></STRONG>   
+</b>
+<p>
+The <STRONG><B><B><B><B><STRONG><B><B><B><B><STRONG><B><B><B><B><STRONG><B><B><B>MATH 
+</B></B></B></STRONG></B> 
+</B></B></B></STRONG></B> 
+</B></B></B></STRONG></B> </B> </B> 
+</B> </STRONG>statement syntax 
+has these arguments</p>
+<table border=1 cellpadding=5 cols=2 frame=below rules=rows>
+<tr valign=top>
+<td class=label width="14%"><b>Part</b></td>
+<td class=label width="86%"><b>Description</b></td>
+</tr>
+<tr valign=top>
+<td width="14%"><b><i>          Variable Name</i></b></td>
+<td width="86%">         
+       
+         Name of the variable to which value 
+      will be used in operation<BR>         
+       
+                      
+       
+                       
+       
+          </td>
+</tr>
+<tr valign=top>
+<td width="14%"><b><i>           Operation</i></b></td>
+<td width="86%">         
+       
+         Mathematical operation<BR>++: 
+      Increment variable's value<BR>--: Decrement variable's value<BR>+=: Add 
+      the value specified in 3rd<BR>parameter to the variable<BR>-=: Subtract 
+      the value specified in<BR>3rd parameter to the variable<BR>*=: Multiply 
+      the value specified in<BR>3rd parameter to the variable<BR>/=: Divide the 
+      variable's value by<BR>the value specified in 3rd parameter<BR>^=: Raise 
+      the variable's value by<BR>the value specified in 3rd parameter<BR>         
+       
+                   
+       
+                      
+       
+                       
+       
+          </td>
+</tr>
+<tr valign=top>
+<td width="14%"><b><i>          Parameters          for operation</i></b></td>
+<td width="86%">         
+       
+         Additional parameter that is required 
+      for some of the above operations<BR>         
+       
+                   
+       
+                      
+       
+                       
+       
+          </td>
+</tr>
+</table><br>
+<p class=label><STRONG>Short Form</STRONG></p>
+<P class=label>M</P>
+<P class=label><STRONG>Remarks</STRONG></P>
+<P>          
+                
+This instruction is very basic one which allows you to some arithmetic with 
+variables value. It doesn't support expressions like (2*3/4) etc.</P>
+<P><STRONG>Examples</STRONG></P>
+1.
+<br><br><CODE><table><tr><td>
+SET:Count,28<BR>LABEL:TheLoop<BR>INSTRUMENT:Count<BR>c# 
+a a b a#<BR>MATH:Count,++<BR>IF:Count,&lt;,128,TheLoop
+</td></tr></table></CODE><br>
+
+<h2>See Also</h2>SET, IF, JUMP<BR>         
+    
+  
+</BODY>
+</HTML>

@@ -1,0 +1,25 @@
+MScript VER:1
+TIMER:60
+
+TuneStart:Main
+--Play only this tune. Do not press Play All
+
+INSTRUMENT:String_Ensemble_1 
+c b:5 a b:3 c a a s:10
+c b:5 a b:3 a b b s:5
+PLAY:SupportTune
+INSTRUMENT:String_Ensemble_1 
+c b:5 a b:3 a a a s:10
+c b:5 a b:3 a a a s:5
+
+TuneEnd:Main
+TuneStart:SupportTune
+
+
+INSTRUMENT:Lead_1_(square) 
+c b:5 a b:3 c a a s:10
+c b:5 a b:3 a b b s:5
+INSTRUMENT:Lead_2_(saw_tooth) 
+c b:5 a b:3 a a a s:10
+c b:5 a b:3 a a a s:5
+TuneEnd:SupportTune

@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+<title>LABEL - MScript Commands - Visual Music</title>
+<style>@import url(vmusic.css);</style>
+</HEAD>
+<BODY>
+
+<H1>  LABEL</H1>
+<br>
+<h2>Command Format:</h2> <EM>  
+LABEL:&lt;Label name&gt;</EM>
+<h2>What it does:</h2>Labels the location in code where you 
+can jump later.
+<h2>Short Form:</h2>        &nbsp;&nbsp;L
+<br><br>
+<h2>Parameters:</h2><STRONG><EM>Label name: 
+</EM></STRONG>           
+   Name of label you want to give
+<BR><BR>
+<h2>Value constraints:</h2><STRONG><EM>Label 
+name:</EM></STRONG> Can not contain space. You can't have two labels with same 
+     name. 
+<br><br>
+<h2>Remarks: </h2>This instruction use used to give a name 
+to the location where you can jump later using JUMP instruction or IF 
+instruction.
+<h2>Examples:</h2>
+1. Play the note c# again and again
+<br><br><CODE><table><tr><td>
+LABEL:DoItAgain<BR>c#<BR>JUMP:DoItAgain
+</td></tr></table></CODE><br>
+2. Play the notes c# 5 times
+<br><br><CODE><table><tr><td>
+SET:Count,5<BR>LABEL:TheLoop<BR>c#<BR>MATH:Count,--<BR>IF:Count,&gt;,0,TheLoop
+</td></tr></table></CODE><br>
+
+<BR>
+<h2>See Also:</h2> NOTE, NOFF, a, a#, b, c, c#,...<BR>
+
+</BODY>
+</HTML>

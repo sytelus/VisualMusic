@@ -1,0 +1,995 @@
+VERSION 5.00
+Begin VB.UserControl UserControl1 
+   ClientHeight    =   3600
+   ClientLeft      =   0
+   ClientTop       =   0
+   ClientWidth     =   10665
+   ScaleHeight     =   3600
+   ScaleWidth      =   10665
+   Begin VB.PictureBox pnlKeyBoard 
+      AutoSize        =   -1  'True
+      ForeColor       =   &H00808080&
+      Height          =   975
+      Left            =   0
+      ScaleHeight     =   915
+      ScaleWidth      =   9255
+      TabIndex        =   0
+      Top             =   0
+      Width           =   9315
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00000000&
+         DragIcon        =   "keyboard.ctx":0000
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   585
+         Index           =   54
+         Left            =   7680
+         ScaleHeight     =   525
+         ScaleWidth      =   105
+         TabIndex        =   31
+         Top             =   90
+         Width           =   165
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00000000&
+         DragIcon        =   "keyboard.ctx":030A
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   585
+         Index           =   42
+         Left            =   6000
+         ScaleHeight     =   525
+         ScaleWidth      =   105
+         TabIndex        =   30
+         Top             =   90
+         Width           =   165
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00000000&
+         DragIcon        =   "keyboard.ctx":0614
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   585
+         Index           =   30
+         Left            =   4320
+         ScaleHeight     =   525
+         ScaleWidth      =   105
+         TabIndex        =   29
+         Top             =   90
+         Width           =   165
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00000000&
+         DragIcon        =   "keyboard.ctx":091E
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   585
+         Index           =   18
+         Left            =   2640
+         ScaleHeight     =   525
+         ScaleWidth      =   105
+         TabIndex        =   28
+         Top             =   90
+         Width           =   165
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00000000&
+         DragIcon        =   "keyboard.ctx":0C28
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   585
+         Index           =   56
+         Left            =   7920
+         ScaleHeight     =   525
+         ScaleWidth      =   105
+         TabIndex        =   27
+         Top             =   90
+         Width           =   165
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00000000&
+         DragIcon        =   "keyboard.ctx":0F32
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   585
+         Index           =   51
+         Left            =   7200
+         ScaleHeight     =   525
+         ScaleWidth      =   105
+         TabIndex        =   26
+         Top             =   90
+         Width           =   165
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00000000&
+         DragIcon        =   "keyboard.ctx":123C
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   585
+         Index           =   49
+         Left            =   6960
+         ScaleHeight     =   525
+         ScaleWidth      =   105
+         TabIndex        =   25
+         Top             =   90
+         Width           =   165
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00000000&
+         DragIcon        =   "keyboard.ctx":1546
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   585
+         Index           =   46
+         Left            =   6480
+         ScaleHeight     =   525
+         ScaleWidth      =   105
+         TabIndex        =   24
+         Top             =   90
+         Width           =   165
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00000000&
+         DragIcon        =   "keyboard.ctx":1850
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   585
+         Index           =   44
+         Left            =   6240
+         ScaleHeight     =   525
+         ScaleWidth      =   105
+         TabIndex        =   23
+         Top             =   90
+         Width           =   165
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00000000&
+         DragIcon        =   "keyboard.ctx":1B5A
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   585
+         Index           =   39
+         Left            =   5520
+         ScaleHeight     =   525
+         ScaleWidth      =   105
+         TabIndex        =   22
+         Top             =   90
+         Width           =   165
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00000000&
+         DragIcon        =   "keyboard.ctx":1E64
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   585
+         Index           =   37
+         Left            =   5280
+         ScaleHeight     =   525
+         ScaleWidth      =   105
+         TabIndex        =   21
+         Top             =   90
+         Width           =   165
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00000000&
+         DragIcon        =   "keyboard.ctx":216E
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   585
+         Index           =   34
+         Left            =   4800
+         ScaleHeight     =   525
+         ScaleWidth      =   105
+         TabIndex        =   20
+         Top             =   90
+         Width           =   165
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00000000&
+         DragIcon        =   "keyboard.ctx":2478
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   585
+         Index           =   32
+         Left            =   4560
+         ScaleHeight     =   525
+         ScaleWidth      =   105
+         TabIndex        =   19
+         Top             =   90
+         Width           =   165
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00000000&
+         DragIcon        =   "keyboard.ctx":2782
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   585
+         Index           =   27
+         Left            =   3840
+         ScaleHeight     =   525
+         ScaleWidth      =   105
+         TabIndex        =   18
+         Top             =   90
+         Width           =   165
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00000000&
+         DragIcon        =   "keyboard.ctx":2A8C
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   585
+         Index           =   25
+         Left            =   3600
+         ScaleHeight     =   525
+         ScaleWidth      =   105
+         TabIndex        =   17
+         Top             =   90
+         Width           =   165
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00000000&
+         DragIcon        =   "keyboard.ctx":2D96
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   585
+         Index           =   22
+         Left            =   3120
+         ScaleHeight     =   525
+         ScaleWidth      =   105
+         TabIndex        =   16
+         Top             =   90
+         Width           =   165
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00000000&
+         DragIcon        =   "keyboard.ctx":30A0
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   585
+         Index           =   20
+         Left            =   2880
+         ScaleHeight     =   525
+         ScaleWidth      =   105
+         TabIndex        =   15
+         Top             =   90
+         Width           =   165
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00000000&
+         DragIcon        =   "keyboard.ctx":33AA
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   585
+         Index           =   15
+         Left            =   2160
+         ScaleHeight     =   525
+         ScaleWidth      =   105
+         TabIndex        =   14
+         Top             =   90
+         Width           =   165
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00000000&
+         DragIcon        =   "keyboard.ctx":36B4
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   585
+         Index           =   13
+         Left            =   1920
+         ScaleHeight     =   525
+         ScaleWidth      =   105
+         TabIndex        =   13
+         Top             =   90
+         Width           =   165
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00000000&
+         DragIcon        =   "keyboard.ctx":39BE
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   585
+         Index           =   10
+         Left            =   1440
+         ScaleHeight     =   525
+         ScaleWidth      =   105
+         TabIndex        =   12
+         Top             =   90
+         Width           =   165
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00000000&
+         DragIcon        =   "keyboard.ctx":3CC8
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   585
+         Index           =   8
+         Left            =   1200
+         ScaleHeight     =   525
+         ScaleWidth      =   105
+         TabIndex        =   11
+         Top             =   90
+         Width           =   165
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00000000&
+         DragIcon        =   "keyboard.ctx":3FD2
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   585
+         Index           =   6
+         Left            =   960
+         ScaleHeight     =   525
+         ScaleWidth      =   105
+         TabIndex        =   10
+         Top             =   90
+         Width           =   165
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00000000&
+         DragIcon        =   "keyboard.ctx":42DC
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   585
+         Index           =   3
+         Left            =   480
+         ScaleHeight     =   525
+         ScaleWidth      =   105
+         TabIndex        =   9
+         Top             =   90
+         Width           =   165
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00000000&
+         DragIcon        =   "keyboard.ctx":45E6
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   585
+         Index           =   1
+         Left            =   240
+         ScaleHeight     =   525
+         ScaleWidth      =   105
+         TabIndex        =   8
+         Top             =   90
+         Width           =   165
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00000000&
+         DragIcon        =   "keyboard.ctx":48F0
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   585
+         Index           =   61
+         Left            =   8640
+         ScaleHeight     =   525
+         ScaleWidth      =   105
+         TabIndex        =   7
+         Top             =   90
+         Width           =   165
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00000000&
+         DragIcon        =   "keyboard.ctx":4BFA
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   585
+         Index           =   63
+         Left            =   8910
+         ScaleHeight     =   525
+         ScaleWidth      =   105
+         TabIndex        =   6
+         Top             =   90
+         Width           =   165
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00000000&
+         DragIcon        =   "keyboard.ctx":4F04
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   585
+         Index           =   58
+         Left            =   8160
+         ScaleHeight     =   525
+         ScaleWidth      =   105
+         TabIndex        =   5
+         Top             =   90
+         Width           =   165
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00FFFFFF&
+         DragIcon        =   "keyboard.ctx":520E
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   855
+         Index           =   62
+         Left            =   8730
+         ScaleHeight     =   795
+         ScaleWidth      =   195
+         TabIndex        =   3
+         Top             =   90
+         Width           =   255
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00FFFFFF&
+         DragIcon        =   "keyboard.ctx":5518
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   855
+         Index           =   64
+         Left            =   8970
+         ScaleHeight     =   795
+         ScaleWidth      =   195
+         TabIndex        =   2
+         Top             =   90
+         Width           =   255
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00FFFFFF&
+         DragIcon        =   "keyboard.ctx":5822
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   855
+         Index           =   7
+         Left            =   1050
+         ScaleHeight     =   795
+         ScaleWidth      =   195
+         TabIndex        =   32
+         Top             =   90
+         Width           =   255
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00FFFFFF&
+         DragIcon        =   "keyboard.ctx":5B2C
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   855
+         Index           =   9
+         Left            =   1290
+         ScaleHeight     =   795
+         ScaleWidth      =   195
+         TabIndex        =   33
+         Top             =   90
+         Width           =   255
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00FFFFFF&
+         DragIcon        =   "keyboard.ctx":5E36
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   855
+         Index           =   11
+         Left            =   1530
+         ScaleHeight     =   795
+         ScaleWidth      =   195
+         TabIndex        =   34
+         Top             =   90
+         Width           =   255
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00FFFFFF&
+         DragIcon        =   "keyboard.ctx":6140
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   855
+         Index           =   4
+         Left            =   570
+         ScaleHeight     =   795
+         ScaleWidth      =   195
+         TabIndex        =   35
+         Top             =   90
+         Width           =   255
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00FFFFFF&
+         DragIcon        =   "keyboard.ctx":644A
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   855
+         Index           =   5
+         Left            =   810
+         ScaleHeight     =   795
+         ScaleWidth      =   195
+         TabIndex        =   36
+         Top             =   90
+         Width           =   255
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00FFFFFF&
+         DragIcon        =   "keyboard.ctx":6754
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   855
+         Index           =   2
+         Left            =   330
+         ScaleHeight     =   795
+         ScaleWidth      =   195
+         TabIndex        =   37
+         Top             =   90
+         Width           =   255
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00FFFFFF&
+         DragIcon        =   "keyboard.ctx":6A5E
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   855
+         Index           =   12
+         Left            =   1770
+         ScaleHeight     =   795
+         ScaleWidth      =   195
+         TabIndex        =   38
+         Top             =   90
+         Width           =   255
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00FFFFFF&
+         DragIcon        =   "keyboard.ctx":6D68
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   855
+         Index           =   14
+         Left            =   2010
+         ScaleHeight     =   795
+         ScaleWidth      =   195
+         TabIndex        =   39
+         Top             =   90
+         Width           =   255
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00FFFFFF&
+         DragIcon        =   "keyboard.ctx":7072
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   855
+         Index           =   16
+         Left            =   2250
+         ScaleHeight     =   795
+         ScaleWidth      =   195
+         TabIndex        =   40
+         Top             =   90
+         Width           =   255
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00FFFFFF&
+         DragIcon        =   "keyboard.ctx":737C
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   855
+         Index           =   17
+         Left            =   2490
+         ScaleHeight     =   795
+         ScaleWidth      =   195
+         TabIndex        =   41
+         Top             =   90
+         Width           =   255
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00FFFFFF&
+         DragIcon        =   "keyboard.ctx":7686
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   855
+         Index           =   19
+         Left            =   2730
+         ScaleHeight     =   795
+         ScaleWidth      =   195
+         TabIndex        =   42
+         Top             =   90
+         Width           =   255
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00FFFFFF&
+         DragIcon        =   "keyboard.ctx":7990
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   855
+         Index           =   21
+         Left            =   2970
+         ScaleHeight     =   795
+         ScaleWidth      =   195
+         TabIndex        =   43
+         Top             =   90
+         Width           =   255
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00FFFFFF&
+         DragIcon        =   "keyboard.ctx":7C9A
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   855
+         Index           =   0
+         Left            =   90
+         ScaleHeight     =   795
+         ScaleWidth      =   195
+         TabIndex        =   65
+         Top             =   90
+         Width           =   255
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00FFFFFF&
+         DragIcon        =   "keyboard.ctx":7FA4
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   855
+         Index           =   23
+         Left            =   3210
+         ScaleHeight     =   795
+         ScaleWidth      =   195
+         TabIndex        =   44
+         Top             =   90
+         Width           =   255
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00FFFFFF&
+         DragIcon        =   "keyboard.ctx":82AE
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   855
+         Index           =   59
+         Left            =   8250
+         ScaleHeight     =   795
+         ScaleWidth      =   195
+         TabIndex        =   1
+         Top             =   90
+         Width           =   255
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00FFFFFF&
+         DragIcon        =   "keyboard.ctx":85B8
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   855
+         Index           =   60
+         Left            =   8490
+         ScaleHeight     =   795
+         ScaleWidth      =   195
+         TabIndex        =   4
+         Top             =   90
+         Width           =   255
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00FFFFFF&
+         DragIcon        =   "keyboard.ctx":88C2
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   855
+         Index           =   24
+         Left            =   3450
+         ScaleHeight     =   795
+         ScaleWidth      =   195
+         TabIndex        =   45
+         Top             =   90
+         Width           =   255
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00FFFFFF&
+         DragIcon        =   "keyboard.ctx":8BCC
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   855
+         Index           =   26
+         Left            =   3690
+         ScaleHeight     =   795
+         ScaleWidth      =   195
+         TabIndex        =   46
+         Top             =   90
+         Width           =   255
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00FFFFFF&
+         DragIcon        =   "keyboard.ctx":8ED6
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   855
+         Index           =   28
+         Left            =   3930
+         ScaleHeight     =   795
+         ScaleWidth      =   195
+         TabIndex        =   47
+         Top             =   90
+         Width           =   255
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00FFFFFF&
+         DragIcon        =   "keyboard.ctx":91E0
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   855
+         Index           =   29
+         Left            =   4170
+         ScaleHeight     =   795
+         ScaleWidth      =   195
+         TabIndex        =   48
+         Top             =   90
+         Width           =   255
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00FFFFFF&
+         DragIcon        =   "keyboard.ctx":94EA
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   855
+         Index           =   31
+         Left            =   4410
+         ScaleHeight     =   795
+         ScaleWidth      =   195
+         TabIndex        =   49
+         Top             =   90
+         Width           =   255
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00FFFFFF&
+         DragIcon        =   "keyboard.ctx":97F4
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   855
+         Index           =   33
+         Left            =   4650
+         ScaleHeight     =   795
+         ScaleWidth      =   195
+         TabIndex        =   50
+         Top             =   90
+         Width           =   255
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00FFFFFF&
+         DragIcon        =   "keyboard.ctx":9AFE
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   855
+         Index           =   35
+         Left            =   4890
+         ScaleHeight     =   795
+         ScaleWidth      =   195
+         TabIndex        =   51
+         Top             =   90
+         Width           =   255
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00FFFFFF&
+         DragIcon        =   "keyboard.ctx":9E08
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   855
+         Index           =   36
+         Left            =   5130
+         ScaleHeight     =   795
+         ScaleWidth      =   195
+         TabIndex        =   52
+         Top             =   90
+         Width           =   255
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00FFFFFF&
+         DragIcon        =   "keyboard.ctx":A112
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   855
+         Index           =   38
+         Left            =   5370
+         ScaleHeight     =   795
+         ScaleWidth      =   195
+         TabIndex        =   53
+         Top             =   90
+         Width           =   255
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00FFFFFF&
+         DragIcon        =   "keyboard.ctx":A41C
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   855
+         Index           =   40
+         Left            =   5610
+         ScaleHeight     =   795
+         ScaleWidth      =   195
+         TabIndex        =   54
+         Top             =   90
+         Width           =   255
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00FFFFFF&
+         DragIcon        =   "keyboard.ctx":A726
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   855
+         Index           =   41
+         Left            =   5850
+         ScaleHeight     =   795
+         ScaleWidth      =   195
+         TabIndex        =   55
+         Top             =   90
+         Width           =   255
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00FFFFFF&
+         DragIcon        =   "keyboard.ctx":AA30
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   855
+         Index           =   43
+         Left            =   6090
+         ScaleHeight     =   795
+         ScaleWidth      =   195
+         TabIndex        =   56
+         Top             =   90
+         Width           =   255
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00FFFFFF&
+         DragIcon        =   "keyboard.ctx":AD3A
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   855
+         Index           =   45
+         Left            =   6330
+         ScaleHeight     =   795
+         ScaleWidth      =   195
+         TabIndex        =   57
+         Top             =   90
+         Width           =   255
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00FFFFFF&
+         DragIcon        =   "keyboard.ctx":B044
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   855
+         Index           =   47
+         Left            =   6570
+         ScaleHeight     =   795
+         ScaleWidth      =   195
+         TabIndex        =   58
+         Top             =   90
+         Width           =   255
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00FFFFFF&
+         DragIcon        =   "keyboard.ctx":B34E
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   855
+         Index           =   48
+         Left            =   6810
+         ScaleHeight     =   795
+         ScaleWidth      =   195
+         TabIndex        =   59
+         Top             =   90
+         Width           =   255
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00FFFFFF&
+         DragIcon        =   "keyboard.ctx":B658
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   855
+         Index           =   50
+         Left            =   7050
+         ScaleHeight     =   795
+         ScaleWidth      =   195
+         TabIndex        =   60
+         Top             =   90
+         Width           =   255
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00FFFFFF&
+         DragIcon        =   "keyboard.ctx":B962
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   855
+         Index           =   52
+         Left            =   7290
+         ScaleHeight     =   795
+         ScaleWidth      =   195
+         TabIndex        =   61
+         Top             =   90
+         Width           =   255
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00FFFFFF&
+         DragIcon        =   "keyboard.ctx":BC6C
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   855
+         Index           =   53
+         Left            =   7530
+         ScaleHeight     =   795
+         ScaleWidth      =   195
+         TabIndex        =   62
+         Top             =   90
+         Width           =   255
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00FFFFFF&
+         DragIcon        =   "keyboard.ctx":BF76
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   855
+         Index           =   55
+         Left            =   7770
+         ScaleHeight     =   795
+         ScaleWidth      =   195
+         TabIndex        =   63
+         Top             =   90
+         Width           =   255
+      End
+      Begin VB.PictureBox PanelWhite 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00FFFFFF&
+         DragIcon        =   "keyboard.ctx":C280
+         DragMode        =   1  'Automatic
+         ForeColor       =   &H00808080&
+         Height          =   855
+         Index           =   57
+         Left            =   8010
+         ScaleHeight     =   795
+         ScaleWidth      =   195
+         TabIndex        =   64
+         Top             =   90
+         Width           =   255
+      End
+   End
+End

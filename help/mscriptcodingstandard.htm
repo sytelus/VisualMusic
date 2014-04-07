@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+<title>MScript Coding Standard - Visual Music</title>
+<style>@import url(vmusic.css);</style>
+</HEAD>
+<BODY>
+
+<H1>MScript Coding Standard</H1>
+<ol>
+	<li>Each MScript command except names of the note should be in capital.
+	<li>MScript variables should be in mixed case and should start with a capital letter.
+	<li>Labels&nbsp;should also be in mixed case and should start with a capital letter.
+	<li>Try to avoid writing instrument number instead of instrument name. For example,
+<br><br>
+<CODE><table><tr><td>
+	INSTRUMENT:Sitar 
+</td></tr></table></CODE><br>
+is more preferable then.
+<br><br>
+<CODE><table><tr><td>
+	INSTRUMENT:104.
+</td></tr></table></CODE><br>
+  <LI>
+	MScript supports 3 styles of comments:
+<br><br><CODE><table><tr><td>
+ 'VB style comment supported<BR>--SQL 
+Server style comment supported<BR>//C++ style comment supported.
+</td></tr></table></CODE>
+<br>
+Try to use VB style comments as standard.
+	<li>
+ MScript
+ supports short names for almost all the commands. For example instead of writing, 
+<br><br>
+<CODE><table><tr><td>
+	INSTRUMENT:Sitar 
+</td></tr></table></CODE><br>
+you can write,
+<br><br>
+<CODE><table><tr><td>
+	 I:Sitar
+</td></tr></table></CODE>
+<br>This short names are supported to do trial and error 
+  quickly and should not be used in released version of your script.</li>
+                     	
+</ol>
+<P></P>
+
+</BODY>
+</HTML>

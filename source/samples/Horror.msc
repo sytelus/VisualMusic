@@ -1,0 +1,10 @@
+MScript VER:1
+TIMER:60
+
+TuneStart:Tune1
+-- This is the example of multi key recording
+
+-- Press Play button on the right to hear this script.
+
+ I:49 NON:1 s:9 NOFF:1 s:14 NON:7 s:12 NOFF:7 s:9 NON:2 s:1 NON:6 s:10 NOFF:6 s:1 NOFF:2 s:10 NON:3 s:0 NON:7 s:11 NOFF:7 s:1 NOFF:3 s:10 NON:6 s:0 NON:1 s:0 NON:2 s:1 NON:7 s:8 NOFF:7 s:1 NOFF:1 s:0 NOFF:2 s:1 NOFF:6 s:15 NON:6 s:13 NOFF:6 s:18 NON:2 s:0 NON:5 s:0 NON:7 s:0 NON:8 s:0 NON:1 s:0 NON:3 s:0 NON:6 s:10 NOFF:6 s:0 NOFF:7 s:0 NOFF:8 s:0 NOFF:1 s:0 NOFF:2 s:0 NOFF:3 s:0 NOFF:5 s:18 NON:7 s:0 NON:1 s:8 NOFF:7 s:0 NON:1 s:1 NOFF:1 s:13 NON:2 s:0 NON:6 s:10 NOFF:6 s:2 NOFF:2 s:12 NON:0 s:10 NOFF:0
+TuneEnd:Tune1

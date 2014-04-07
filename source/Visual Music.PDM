@@ -1,0 +1,183 @@
+[Root]
+Most Recent Package=Standard Setup Package 1
+
+
+[Package|Standard Setup Package 1|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Shital\Progs\Visual Music\Package
+
+[Package|Standard Setup Package 1|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Standard Setup Package 1|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Standard Setup Package 1|Files Found]
+
+[Package|Standard Setup Package 1|Files Released]
+Visual Music.CHI=
+STKIT432.DLL=
+readme.txt=
+a.msc=
+
+[Package|Standard Setup Package 1|Missing Dependency Information]
+
+[Package|Standard Setup Package 1|Out-of-Date Dependency Information]
+
+[Package|Standard Setup Package 1|Files Added]
+c:\shital\progs\visual music\instruments.ini=
+c:\shital\progs\visual music\favorites.ini=
+c:\shital\progs\visual music\visualmusic.ico=
+a.msc=
+c:\shital\progs\visual music\samples\at all cost.msc=
+c:\shital\progs\visual music\samples\fad out effect.msc=
+c:\shital\progs\visual music\samples\multiple instruments1.msc=
+c:\shital\progs\visual music\samples\multiple instruments2.msc=
+c:\shital\progs\visual music\samples\note on-off demo.msc=
+c:\shital\progs\visual music\samples\play second tune.msc=
+c:\shital\progs\visual music\samples\rock organ.msc=
+c:\shital\progs\visual music\samples\space music.msc=
+c:\shital\progs\visual music\samples\violin tune.msc=
+c:\shital\progs\visual music\samples\whistle recording.msc=
+readme.txt=
+c:\shital\progs\visual music\samples\!!how to play.msc=
+C:\Shital\Progs\Visual Music\readme.txt=
+C:\Shital\Progs\Visual Music\samples\readme samples.txt=
+
+[Package|Standard Setup Package 1|Files Removed]
+c:\shital\progs\visual music\samples\readme.txt=
+c:\shital\progs\visual music\samples\a.msc=
+
+[Package|Standard Setup Package 1|Files In Project]
+C:\Shital\Progs\Visual Music\Visual Music.exe=Yes
+C:\WINDOWS\SYSTEM\MSVBVM60.DLL=Yes
+C:\WINDOWS\SYSTEM\OLEAUT32.DLL=Yes
+C:\WINDOWS\SYSTEM\OLEPRO32.DLL=Yes
+C:\WINDOWS\SYSTEM\ASYCFILT.DLL=Yes
+C:\WINDOWS\SYSTEM\STDOLE2.TLB=Yes
+C:\WINDOWS\SYSTEM\COMCAT.DLL=Yes
+C:\WINDOWS\SYSTEM\hhctrl.ocx=Yes
+C:\WINDOWS\SYSTEM\itss.dll=Yes
+C:\WINDOWS\SYSTEM\itircl.dll=Yes
+C:\WINDOWS\hh.exe=Yes
+C:\WINDOWS\SYSTEM\MSCOMCTL.OCX=Yes
+C:\WINDOWS\SYSTEM\RICHTX32.OCX=Yes
+C:\WINDOWS\SYSTEM\RICHED32.DLL=Yes
+C:\WINDOWS\SYSTEM\COMDLG32.OCX=Yes
+C:\Shital\Progs\Visual Music\Visual Music.chm=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\Shital\Progs\Visual Music\Instruments.ini=Yes
+C:\Shital\Progs\Visual Music\favorites.ini=Yes
+C:\Shital\Progs\Visual Music\VisualMusic.ico=Yes
+C:\Shital\Progs\Visual Music\samples\At all cost.msc=Yes
+C:\Shital\Progs\Visual Music\samples\Fad out effect.msc=Yes
+C:\Shital\Progs\Visual Music\samples\Multiple Instruments1.msc=Yes
+C:\Shital\Progs\Visual Music\samples\Multiple Instruments2.msc=Yes
+C:\Shital\Progs\Visual Music\samples\Note On-Off demo.msc=Yes
+C:\Shital\Progs\Visual Music\samples\Play second tune.msc=Yes
+C:\Shital\Progs\Visual Music\samples\Rock organ.msc=Yes
+C:\Shital\Progs\Visual Music\samples\space music.msc=Yes
+C:\Shital\Progs\Visual Music\samples\Violin tune.msc=Yes
+C:\Shital\Progs\Visual Music\samples\Whistle recording.msc=Yes
+C:\Shital\Progs\Visual Music\samples\!!How to play.msc=Yes
+C:\Shital\Progs\Visual Music\readme.txt=Yes
+C:\Shital\Progs\Visual Music\samples\readme samples.txt=Yes
+
+[Package|Standard Setup Package 1|Configure Registry Files]
+Applicable=No
+
+[Package|Standard Setup Package 1|Configure Remote Servers]
+Applicable=No
+
+[Package|Standard Setup Package 1|Install Locations]
+C:\Shital\Progs\Visual Music\Visual Music.exe=$(AppPath)
+C:\WINDOWS\SYSTEM\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\hhctrl.ocx=$(WinSysPath)
+C:\WINDOWS\SYSTEM\itss.dll=$(WinSysPath)
+C:\WINDOWS\SYSTEM\itircl.dll=$(WinSysPath)
+C:\WINDOWS\hh.exe=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSCOMCTL.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM\RICHTX32.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM\RICHED32.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\COMDLG32.OCX=$(WinSysPath)
+C:\Shital\Progs\Visual Music\Visual Music.chm=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\Shital\Progs\Visual Music\Instruments.ini=$(AppPath)
+C:\Shital\Progs\Visual Music\favorites.ini=$(AppPath)
+C:\Shital\Progs\Visual Music\VisualMusic.ico=$(AppPath)
+C:\Shital\Progs\Visual Music\samples\At all cost.msc=$(AppPath)
+C:\Shital\Progs\Visual Music\samples\Fad out effect.msc=$(AppPath)
+C:\Shital\Progs\Visual Music\samples\Multiple Instruments1.msc=$(AppPath)
+C:\Shital\Progs\Visual Music\samples\Multiple Instruments2.msc=$(AppPath)
+C:\Shital\Progs\Visual Music\samples\Note On-Off demo.msc=$(AppPath)
+C:\Shital\Progs\Visual Music\samples\Play second tune.msc=$(AppPath)
+C:\Shital\Progs\Visual Music\samples\Rock organ.msc=$(AppPath)
+C:\Shital\Progs\Visual Music\samples\space music.msc=$(AppPath)
+C:\Shital\Progs\Visual Music\samples\Violin tune.msc=$(AppPath)
+C:\Shital\Progs\Visual Music\samples\Whistle recording.msc=$(AppPath)
+C:\Shital\Progs\Visual Music\samples\!!How to play.msc=$(AppPath)
+C:\Shital\Progs\Visual Music\readme.txt=$(AppPath)
+C:\Shital\Progs\Visual Music\samples\readme samples.txt=$(AppPath)
+
+[Package|Standard Setup Package 1|Configure Shared Files]
+Applicable=Yes
+C:\Shital\Progs\Visual Music\Visual Music.exe=No
+C:\Shital\Progs\Visual Music\Visual Music.chm=No
+C:\Shital\Progs\Visual Music\Instruments.ini=No
+C:\Shital\Progs\Visual Music\favorites.ini=No
+C:\Shital\Progs\Visual Music\VisualMusic.ico=No
+C:\Shital\Progs\Visual Music\samples\At all cost.msc=No
+C:\Shital\Progs\Visual Music\samples\Fad out effect.msc=No
+C:\Shital\Progs\Visual Music\samples\Multiple Instruments1.msc=No
+C:\Shital\Progs\Visual Music\samples\Multiple Instruments2.msc=No
+C:\Shital\Progs\Visual Music\samples\Note On-Off demo.msc=No
+C:\Shital\Progs\Visual Music\samples\Play second tune.msc=No
+C:\Shital\Progs\Visual Music\samples\Rock organ.msc=No
+C:\Shital\Progs\Visual Music\samples\space music.msc=No
+C:\Shital\Progs\Visual Music\samples\Violin tune.msc=No
+C:\Shital\Progs\Visual Music\samples\Whistle recording.msc=No
+C:\Shital\Progs\Visual Music\samples\!!How to play.msc=No
+C:\Shital\Progs\Visual Music\readme.txt=No
+C:\Shital\Progs\Visual Music\samples\readme samples.txt=No
+
+[Package|Standard Setup Package 1|Distribution]
+Type=single
+Size=
+Title=Visual Music
+
+[Package|Standard Setup Package 1|Visual Music]
+Icon1=Visual Music.exe
+Title1=Visual Music
+StartIn1=$(AppPath)
+Key1=Icon1
+Icon2=Visual Music.chm
+Title2=Visual Music Help
+StartIn2=$(AppPath)
+Key2=Icon3
+
+[Package|Standard Setup Package 1|IconGroups]
+Group0=Visual Music
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|Standard Setup Package 1|Package]
+PackageFolder=C:\Shital\Progs\Visual Music\Package
+ProjectFolder=C:\Shital\Progs\Visual Music
+ServerSideCab=
+File1=C:\Shital\Progs\Visual Music\Package\setup.exe
+File2=C:\Shital\Progs\Visual Music\Package\Setup.Lst
+File3=C:\Shital\Progs\Visual Music\Package\Visual Music.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz

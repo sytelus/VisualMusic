@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML dir=ltr>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+<title>PRINT Statement</title>
+<style>@import url(vmusic.css);</style>
+<BODY>
+
+<h1><a name="vastmsavesetting"></a><B><B><B><STRONG><B><B><B><B><STRONG><B><B><B><B><STRONG><B><B><B><B><STRONG><B><B><B>PRINT&nbsp; 
+</B></B></B></STRONG></B> 
+</B></B></B></STRONG></B> 
+</B></B></B></STRONG></B> 
+</B></B></B></STRONG> 
+</B> </B> </B> Statement</h1>
+<p>
+ Prints the value of
+ specified variable or parameter in the debug window.</p>
+<p class=label>
+<b>Syntax</b></p>
+<b><STRONG><B><B><B>
+<P>PRINT:<EM>&lt;Variable or parameter name&gt;,[Tag 
+Word]</EM></P>  
+</B></B></B></STRONG>   
+</b>
+<p>
+The&nbsp; <STRONG><B><B><B><B><STRONG><B><B><B><B><STRONG><B><B><B><B><STRONG><B><B><B>PRINT 
+</B></B></B></STRONG></B> 
+</B></B></B></STRONG></B> 
+</B></B></B></STRONG></B> </B> </B> 
+</B> </STRONG>statement syntax 
+has these arguments</p>
+<table border=1 cellpadding=5 cols=2 frame=below rules=rows>
+<tr valign=top>
+<td class=label width="14%"><b>Part</b></td>
+<td class=label width="86%"><b>Description</b></td>
+</tr>
+<tr valign=top>
+<td width="14%"><b><i>          Variable or          parameter name</i></b></td>
+<td width="86%">
+      <P>This could be the name of the variable whoops value is needed to print 
+      or any of the following strings:</P>
+      NI - to print the value of current Note&nbsp; Interval<br>
+      SI - to print the value of current silence&nbsp; Interval<br>
+      OCTAVE - to print the value of current octave<br>
+      VOLUME - to print the value of current volume settings<br>
+      PAN - to print the value of current pan settings<br>
+	  <br>NOTE: The parameter name above must be in upper case.
+              
+                  
+       
+                      
+       
+                       
+       
+          </td>
+</tr>
+<tr valign=top>
+<td width="14%"><b><i>           Tag           Word</i></b></td>
+<td width="86%">         
+       
+         This is simply any         
+       
+         string without space that you want 
+      to print along with the value         
+       
+                   
+       
+                      
+       
+                       
+       
+          </td>
+</tr>
+</table><br>
+<p class=label><STRONG>Short Form</STRONG></p>
+<P class=label>None</P>
+<P class=label><STRONG>Remarks</STRONG></P>
+<P>          
+                
+       This instruction is vary useful for debugging purposes 
+when you want to know what is the value of a variable or some MIDI parameter          
+                
+       at any point in the script. 
+The PRINT statement prints a line with following format:</P>
+<P>Name_of_tune : Tag_Word, value</P>
+<P><STRONG>Examples</STRONG></P>
+1.
+<br><CODE><table><tr><td>
+SET:MyVar<BR>RANDOM:MyVar,1000<BR>PRINT:MyVar,Some_Random_Value
+</td></tr></table></CODE><br>
+
+2.
+<br><CODE><table><tr><td>
+SET:MyVar<BR>RANDOM:MyVar<BR>PRINT:MyVar
+</td></tr></table></CODE><br>
+
+
+<h2>See Also</h2>SET, OCTAVE, VOLUME, PAN, NOTE_INTERVAL, SILENCE_INTERVAL<BR>         
+    
+  
+</BODY>
+</HTML>

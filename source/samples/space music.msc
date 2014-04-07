@@ -1,0 +1,44 @@
+MScript VER:1
+TIMER:60
+
+TuneStart:TaikoDrum
+--Don't press Play button! Press Play All button on the bottom right side!!
+
+INSTRUMENT:Taiko_Drum 
+
+SILENCE:150
+
+LABEL:TOP
+	S:7 a:2,0 I:118 S:3 c:2,0 b a
+JUMP:TOP
+TuneEnd:TaikoDrum
+TuneStart:AcousticGuitar
+INSTRUMENT:Acoustic_Guitar_(steel) I:FX_1_(rain) 
+
+SILENCE:100
+
+LABEL:TOP
+	c:3,0 b:4,0 a:2,0
+	d:3,0 a:4,0 c:2,0
+JUMP:TOP
+TuneEnd:AcousticGuitar
+TuneStart:Leads7
+INSTRUMENT:Lead_7_(fifths) 
+
+SILENCE:50
+
+LABEL:TOP
+	c:3,0 b:4,0 a:2,0
+	d:3,0 a:4,0 c:2,0
+JUMP:TOP
+
+
+TuneEnd:Leads7
+TuneStart:Pad5
+INSTRUMENT:Pad_5_(bowed) 
+
+LABEL:TOP
+	c:3,0 b:4,0 a:2,0
+	d:3,0 a:4,0 c:2,0
+JUMP:TOP
+TuneEnd:Pad5

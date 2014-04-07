@@ -1,0 +1,96 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+<title>MIDI Programming Guide</title>
+<style>@import url(vmusic.css);</style>
+</HEAD>
+<BODY>
+
+<H1>MIDI Programming Guide</H1>
+<P>
+
+Space and time doesn't permit me to write full featured guide on MIDI programming. But it's fairly simple. Almost all things such as playing/stopping notes, setting instruments etc could be achieved by API function <i>midiOutShortMsg</i> in winmm.dll library. Unfortunately the parameter values that you can pass
+to this function is completely undocumented and even I still don't know it's ins and outs. However you can get several sample code
+from Internet and get the idea of it. I'll try to update this section in future. By the time if you need help do contact me at shital_s@usa.net.<br>
+<br>
+Here's the simplified code for how to call <i>midiOutShortMsg</i> 
+function,
+<br><br><CODE><table><tr><td>
+      <P>     
+       'API declaration </P>
+      <P>Private Declare Function midiOutShortMsg Lib "winmm.dll" (ByVal 
+      hMidiOut As Long, ByVal dwMsg As Long) As Long </P>
+      <P>Private Sub SendMidiOut(ByVal vlEvent As Long, ByVal vlNote As Long, ByVal 
+vlVelocity As Long)<BR> <BR>
+&nbsp;&nbsp;&nbsp; 'vlEvent - is command to MIDI device<br>&nbsp;&nbsp;&nbsp; 'vlVelocity - is another 
+      name for Volume </P>
+      <P>
+&nbsp;&nbsp;&nbsp; Dim 
+lLowWord As Long<BR>&nbsp;&nbsp;&nbsp; Dim lHighWord As 
+Long<BR>&nbsp;&nbsp;&nbsp; Dim lMidiAPIReturn As Long<BR>&nbsp;&nbsp;&nbsp; Dim 
+lMidiMessage As Long<BR>&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp; lLowWord = (vlNote * 
+256) + vlEvent<BR>&nbsp;&nbsp;&nbsp; lHighWord = 
+      ((vlVelocity Mod 256) * 256) * 256</P>
+<P>&nbsp;&nbsp;&nbsp; lMidiMessage = lLowWord + lHighWord<BR>&nbsp;&nbsp; 
+<BR>&nbsp;&nbsp;&nbsp; lMidiAPIReturn =                     midiOutShortMsg(mlMIDIOutHandle, 
+lMidiMessage)<BR>&nbsp;&nbsp;&nbsp; 'Check the return value</P>
+<P>End Sub<BR></P>
+</td></tr></table></P>
+<P></CODE><br>
+
+Following is what the 32 
+bits&nbsp; lMidiMessage means in second parameter of midiOutShortMsg:</P>
+<P>
+______________________________<BR>
+|_7_|_6_|_5_|_4_|_3_|_2_|_1_|_0_| </P>
+<P>
+
+<BR>
+0 - Channel number for which this MIDI command is meant for<br>
+1 - MIDI command (hex value):<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+8: Turn note OFF<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+9: Turn note ON<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+A: Polyphonic key after touch<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+B: Control change<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+C: Instrument change<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+D: Channel after touch<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+E: Pitch bend change<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+F: System<br>
+2,3.4,5 - data for the MIDI command <br>
+6,7 - Note used<br></P>
+
+<P>Here's example of how above function used:</P>
+Here's how to start a note:
+<br><br><CODE><table><tr><td>
+      <P>&nbsp;lMidiEvent = 144 + m_lChannel<BR>Call SendMidiOut(lMidiEvent, 
+      lActualMidiNote, lMidiVolume) </P>
+   
+</td></tr></table></CODE><br>
+Here's how to stop a note
+<br><br><CODE><table><tr><td>
+      <P>lMidiEvent = 144 + m_lChannel<BR>Call SendMidiOut(lMidiEvent, 
+      lActualMidiNote, 0) </P>
+   
+</td></tr></table></CODE><br>
+Here's how to change the instrument
+<br><br><CODE><table><tr><td>
+      <P>lMidiEvent = &amp;HC0 + m_lChannel<BR>lMidiNote = 
+      m_lInstrument<BR>lMidiVolume = 0<BR>Call SendMidiOut(lMidiEvent, 
+      lMidiNote, lMidiVolume) </P>
+   
+</td></tr></table></CODE>
+<P>&nbsp;</P>
+<P>
+
+Also to refer following topic in MSDN library (available also at <a href="http://msdn.microsoft.com">http://msdn.microsoft.com</a>:<br>
+<b><i>Platform SDK/Graphics and Multimedia Services/Windows Multimedia/Musical Instrument Digital Interface(MIDI)</i></b>
+Here you will find just too much information here. You can read important topics such as MIDI out API functions.<br>
+<br>
+Here's few sites that can be helpful:<br><br>
+<a href="http://members.tripod.com/musictheory/index.html">Kyle's Music Theory Page</a><br>
+<a href="http://musicsearch.com/">MusicSearch The Internet's Music-Only Search Site</a><br>
+<a href="http://www.modemss.brisnet.org.au/~mlevoi/index.html">GS - XG - GM MIDI Software</a></P>
+			   
+</BODY>
+</HTML>

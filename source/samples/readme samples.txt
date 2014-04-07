@@ -1,0 +1,1 @@
+To Play the sample, click on the .MSC file which will load the file. Then press the Play button or Tune > Play Selected Tune menu. Some of the samples can be played by pressing Tune > Play All Tunes menu. Look on the first line to know this!

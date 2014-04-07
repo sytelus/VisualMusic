@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML dir=ltr>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+<title>OCTAVE Statement</title>
+<style>@import url(vmusic.css);</style>
+<BODY>
+
+<h1><a name="vastmsavesetting"></a><B>OCTAVE </B> Statement</h1>
+<p>
+      Sets the octave in which next notes will be played. See 
+<A href="whatisnoteoctaveandblablabla.htm">What is Note, Octave and bla bla 
+bla</A>
+       
+          
+        </p>
+<p class=label>
+<b>Syntax</b></p>
+<p>
+<b>OCTAVE:<EM>&lt;Octave 
+number&gt;</EM>   
+</b></p>
+<p>
+The <STRONG><B>OCTAVE 
+</B> </STRONG>statement syntax 
+has these arguments</p>
+<table border=1 cellpadding=5 cols=2 frame=below rules=rows>
+<tr valign=top>
+<td class=label width="14%"><b>Part</b></td>
+<td class=label width="86%"><b>Description</b></td>
+</tr>
+<tr valign=top>
+<td width="14%"><b><i>     Octave number</i></b></td>
+<td width="86%">         
+       
+         Octave number</td>
+</tr>
+</table><br>
+<p class=label><STRONG>Short Form</STRONG></p>
+<P class=label>O</P>
+<P class=label><STRONG>Remarks</STRONG></P>
+<P>This value is used only if you do not specify the octave as   the part of   the instruction. Default value is 4. You can specify values as high 
+as 256 but it produces some unpredictable effects.<BR><STRONG></STRONG></P>
+<P><STRONG>Examples</STRONG></P>
+1. Set octave to 2 and then 6
+<br><br><CODE><table><tr><td>
+OCTAVE:2<BR>a b c
+<BR>OCTAVE:6<BR>a b c
+</td></tr></table></CODE><br>
+
+2. Play notes in decreasing octave
+<br><br><CODE><table><tr><td>
+SET:Count,7<BR>LABEL:TheLoop<BR>OCTAVE:Count<BR>c# a 
+a<BR>MATH:Count,--<BR>IF:Count,&gt;,0,TheLoop
+</td></tr></table></CODE><br>
+
+<h2>See Also</h2>PAN, VOLUME, SET, a, a#, b, c, 
+c#,...<BR>         
+    
+  
+</BODY>
+</HTML>
